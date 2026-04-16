@@ -1,0 +1,9 @@
+#nexus
+begin sets;
+    charset part1 = 12S_mtg.fasta: *;
+    charset part2 = 16S_mtg.fasta: *;
+    charset part3 = COIII_mtg.fasta: *;
+    charset part4 = mtg_spp.nex *; 
+
+    charpartition mine = GTR+G:part2, GTR+G:part2, GTR+G:part3, Mk:part4; 
+end;
