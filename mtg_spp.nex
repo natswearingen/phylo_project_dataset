@@ -1,11 +1,11 @@
 #NEXUS
-[written Fri Apr 03 23:35:04 PDT 2026 by Mesquite  version 4.01 (build 1092) at orca_express/192.168.0.11]
+[written Thu Apr 16 09:50:34 PDT 2026 by Mesquite  version 4.01 (build 1092) at orca_express/137.150.84.151]
 
 BEGIN TAXA;
 	TITLE Taxa2;
-	DIMENSIONS NTAX=30;
+	DIMENSIONS NTAX=31;
 	TAXLABELS
-		'Alopias_vulpinus' 'Beringraja_binoculata' 'Callorhinchus_milii' 'Carcarhias_taurus ' Carcharhinus 'Cetorhinus_maximus' 'Chiloscyllium_plagiosum' 'Chlamydoselachus_anguineus ' 'Fluvitrygon_signifer' 'Galeocerdo_cuvier' 'Galeorhinus_galeus' 'Ginglymostoma_cirratum' 'Heptranchias_perlo' 'Heterodontus_francisci' Hexanchus 'Isurus_oxyrinchus' Mustelus 'Negaprion_brevirostris' 'Notorynchus_cepedianus' 'Odontaspididae_noronhai' 'Parmaturus_xaniurus ' 'Platyrhinoidis_triseriata' Pristis 'Pteroplatytrygon_violacea' 'Somnsiosus_microcelaphus' Sphyrna 'Stegostoma_trigrinum' Taeniura 'Telatrygon_zugei' Urolophus 
+		Alopias Beringraja Callorhinchus Carcharias 'Carcharhinus_l' 'Carcharhinus_a' Cetorhinus Chiloscyllium Chlamydoselachus Fluvitrygon Galeocerdo Galeorhinus Ginglymostoma Heptranchias Heterodontus Hexnachus Isurus Mustelus Negaprion Notorynchus Odontaspis Parmaturus Pristis Pteroplatytrygon Somnsiosus 'Sphyrna_z' 'Sphyrna_ti' Stegostoma Taeniura Telatrygon Urolophus 
 	;
 
 END;
@@ -68,8 +68,8 @@ BEGIN CHARACTERS;
 		50 'Sub: Craniopalatine articulation - ethmoidal' /  absent present,
 		51 Postorbital_articulation /  absent present,
 		52 Oblique_ridge_or_groove_along_medial_face_of_palatoquadrate /  absent present,
-		53 Large_otic_process_of_the_palatoquadrate / ,
-		54 Otic_process_forming_a_quadrate_flange / ,
+		53 Large_otic_process_of_the_palatoquadrate,
+		54 Otic_process_forming_a_quadrate_flange,
 		55 Mandibular_joint /  eye otic_region,
 		56 'Meckel''s cartilage' /  not_expanded_medially_ expanded_medially,
 		57 'Winglike process on Meckel''s cartilage' /  absent_ present_,
@@ -222,7 +222,7 @@ BEGIN CHARACTERS;
 		204 'LT: root with well developed downwards pointed lobes' /  absent present,
 		205 'UT: root with well developed downwards pointed lobes' /  absent present,
 		206 'LT: prominent lingual bulge' /  absent present,
-		207 'UT: prominent lingual bulge' / ,
+		207 'UT: prominent lingual bulge',
 		208 'LT: Overlapping surface' /  absent present,
 		209 'Sub: overlapping surface' /  'developed till the crown-root borderline (teeth arranged in a row, not overlapping)' 'developed on all the root` height (teeth arranged imbricative, overlapping)',
 		210 'UT: Overlapping surafce' /  absent present,
@@ -231,7 +231,7 @@ BEGIN CHARACTERS;
 		213 'Teeth with one central, prominent foramen on basal face' /  absent present,
 		214 Teeth_with_several_lateral_prominent_foramina_on_the_labial_face /  absent present,
 		215 'LT: several lateral prominent foramina on the lingual face' /  absent present,
-		216 'UT: several lateral prominent foramina on the lingual face' / ,
+		216 'UT: several lateral prominent foramina on the lingual face',
 		217 'LT: Button hole (="boutonnière") between labial and lingual face' /  absent present,
 		218 'LT: Lingual groove at the level of the basal part of the lingual face' /  absent present,
 		219 'LT: Labial groove at the level of the basal part of the lingual face' /  absent present,
@@ -253,36 +253,37 @@ BEGIN CHARACTERS;
 		235 lagena_hooked_,
 		236 Torsion_in_the_Horizontal_canal_ ; 
 	MATRIX
-	'Alopias_vulpinus'           ?101???????1???????00----00-??1?0?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????00000011000
-	'Beringraja_binoculata'      ?10????????????????01???00??0?000????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????01000010000
-	'Callorhinchus_milii'        ?0??????????????????0----?0-1?1001-?????????????????--???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????00001001000
-	'Carcarhias_taurus '         ?10????????1???????00----00-??100?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????0??????000?
-	Carcharhinus                 ?10110-0000100-000100----00-1-10003001000010100101000-200000-0100-000000000010100010??(0 1)1(0 1)100-----0000--0100-000000011000100001?10021220----1(0 1)00-0010000002--111000100000?0-0001000--010300010012001011(0 1 2)000100000-00100000100-0-10011001101?0
-	'Cetorhinus_maximus'         ?101???????1???????00----00-??1?0?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????00000011000
-	'Chiloscyllium_plagiosum'    ?10????????1???????00----0(0 1)0??100?????00????????????????01????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????10001010000
-	'Chlamydoselachus_anguineus '?10100-10000010000010----00-00001010000000100001100010300000-0110100000100000001000000001-10-----1001---100-010000011000000001000001100----10-0-0010000102--10100000000000-0001000--0100100010220010410000000110-00100000000-0-0001000010001
-	'Fluvitrygon_signifer'       ?1?????????0???1?0001????0??010000210?10???0??0????????00??1113?0?0?1?0??????00001?002?????11??????1?1????????????????????????????????1??0?0?????????11?????????01?????110?10000????1??????????????1?????????????????????????????01001010000
-	'Galeocerdo_cuvier'          ?10????????????????00----?0-??100????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????01001010000
-	'Galeorhinus_galeus'         ?10????????1???????00----00-??100?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????00001010000
-	'Ginglymostoma_cirratum'     ?10120-0000100-300000----0110110000001000010000101000-000100-0100-00000000000010001000000?010----00020--110-0000000110000000?1?10001210----1100-0010000002--111000000000?0-0001000--0100000100220210410000000110-00100??0000-130011100010000
-	'Heptranchias_perlo'         ?10100-?0000010000010----10-000110100001001?0001101010300000-00101000001100000011000001-1-10-----0000--0100-010100011000001001?00001000----?0-0-10100001010010100000000000-0001000--0113100000000200311000200000-00000000000-0-0?01000010000
-	'Heterodontus_francisci'     ?100-0-01000010300000----00-0110000001000010000101000-000100-0110-000000000000100000000101010----10020--100-000000011000100001000001200----1100-00100000001010100000000000-0001001000(0 1)06000(0 1)00220(1 2)1(0 1)(3 4)10000000110-00100000000-0-0(0 1)10011010000
-	Hexanchus                    ?10100-10000010000010----10-00011010000100110001101010300000-0000100000010000001000000011-10-----0000--0100-010100011000001001000001000----?0-0-10100001010010100000000000-0001000--0113100000000200311000200000-00000000000-0-0001000010011
-	'Isurus_oxyrinchus'          ?10110-0000100-000000----00-0110000001000010100101000-300000-0110-00000000?010100010??1-1-00-----0000--1100-000000001000000001?10001210----10-0-0010000012--110000000000?0-0001000--010100110022010010(1 2)000111110-00100000000-0-0001100010000
-	Mustelus                     ?10110-1000100-000000----00-0110003001000010000101000-200000-0100?000000000000100010??011-00-----0000--0100-000000011000100001?10011220----1100-0010000002--111000100000?0-0001000--0104000100220010110000000110-0001111000110-110???????000
-	'Negaprion_brevirostris'     ?10????????1???????00----00-??100?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????000??1??100
-	'Notorynchus_cepedianus'     ?10100-?0000010000010----00-00011010000000100001101010300000-00?0100000010?00001100000011-10-----0000--0100-010100011000??1001000001000----10-0-10100001010010100000000000-0001000--0113100000000200311000200000-00000000000-0-000100011?010
-	'Odontaspididae_noronhai'    ?10????????1???????00----00-??100?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????0000101?000
-	'Parmaturus_xaniurus '       ?10????????????????00----?0-??100????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????0000101?000
-	'Platyrhinoidis_triseriata'  ?101012000000100100011-0001001000001001000110000--000-200000-02-0000110-000110000110021-1-0110010000210-10100000000110100000110000012310100012111110100000100-10010001000110001000--00040001002210112?0000000110-0001000000110-1?0100001?000
-	Pristis                      ?10100-10000011001001001200-01010001001000110000--000-?00000-02-00001102000110000110011-1-0110012000210-101000001001100011?011?0??0123100120121111100000?0??0-10010001000100001010--00040001002210112?0000000110-0001000000110-1?0100001?000
-	'Pteroplatytrygon_violacea'  ?1?????????????1?0001???????010000200??????0??0????????00??111??0?0?1?0????2?????1?002?????11??????1?1????121?????????????????0?21????1??0????????0??11?????????01?????100-10000????1??????????????0?????????????????????????????000000?1000
-	'Somnsiosus_microcelaphus'   ?101???????00??????00----10-??0110????00????????1?0?????0?????1??????0??0????10000????????0??????????????1?????0??????????0????????????????1??0-???????0??0?0????????????????0???????????0??????????????????????????????????????101000010011
-	Sphyrna                      ?10110-0000100-?00100----00-1-10003001000010100101000-300000-0100-000000000010100010??(0 1)1(0 1)100-----0000--0100-000000011000100001?10021220----10-0-0010000002--111000100000?0-0001000--0103000100120010112000100000-00100000100-0-10000110?0000
-	'Stegostoma_trigrinum'       ?10????????????????00----?0-??100????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????10011010000
-	Taeniura                     ?1?????????0???1?0001????011010000210?10???0??0????????00??1113?0?0?1?0????2?00001?002?????11??????1?1????111?????????????????0?21????1??0?0??????0??11?????????01?????100-10000????1??????????????0?????????????????????????????00001010000
-	'Telatrygon_zugei'           ?1?????????0???????01????0110?000?????10????????????????0?????3??????????????00001?????????????????????????????????????????????????????????0?????????????????????????????????0???????????????????????????????????????????????????01001010000
-	Urolophus                    ?1?1?0?-??0?0??100?0101000110100002??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????01101010001
+	Alopias           ?101???????1???????00----00-??1?0?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????00000011000
+	Beringraja        ?10????????????????01???00??0?000????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????01000010000
+	Callorhinchus     ?0??????????????????0----?0-1?1001-?????????????????--???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????00001001000
+	Carcharias        ?10????????1???????00----00-??100?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????0??????000?
+	'Carcharhinus_l'  ?10110-0000100-000100----00-1-10003001000010100101000-200000-0100-000000000010100010??(0 1)1(0 1)100-----0000--0100-000000011000100001?10021220----1(0 1)00-0010000002--111000100000?0-0001000--010300010012001011(0 1 2)000100000-00100000100-0-10011001101?0
+	'Carcharhinus_a'  ?10110-0000100-000100----00-1-10003001000010100101000-200000-0100-000000000010100010??(0 1)1(0 1)100-----0000--0100-000000011000100001?10021220----1(0 1)00-0010000002--111000100000?0-0001000--010300010012001011(0 1 2)000100000-00100000100-0-10011001101?0
+	Cetorhinus        ?101???????1???????00----00-??1?0?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????00000011000
+	Chiloscyllium     ?10????????1???????00----0(0 1)0??100?????00????????????????01????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????10001010000
+	Chlamydoselachus  ?10100-10000010000010----00-00001010000000100001100010300000-0110100000100000001000000001-10-----1001---100-010000011000000001000001100----10-0-0010000102--10100000000000-0001000--0100100010220010410000000110-00100000000-0-0001000010001
+	Fluvitrygon       ?1?????????0???1?0001????0??010000210?10???0??0????????00??1113?0?0?1?0??????00001?002?????11??????1?1????????????????????????????????1??0?0?????????11?????????01?????110?10000????1??????????????1?????????????????????????????01001010000
+	Galeocerdo        ?10????????????????00----?0-??100????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????01001010000
+	Galeorhinus       ?10????????1???????00----00-??100?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????00001010000
+	Ginglymostoma     ?10120-0000100-300000----0110110000001000010000101000-000100-0100-00000000000010001000000?010----00020--110-0000000110000000?1?10001210----1100-0010000002--111000000000?0-0001000--0100000100220210410000000110-00100??0000-130011100010000
+	Heptranchias      ?10100-?0000010000010----10-000110100001001?0001101010300000-00101000001100000011000001-1-10-----0000--0100-010100011000001001?00001000----?0-0-10100001010010100000000000-0001000--0113100000000200311000200000-00000000000-0-0?01000010000
+	Heterodontus      ?100-0-01000010300000----00-0110000001000010000101000-000100-0110-000000000000100000000101010----10020--100-000000011000100001000001200----1100-00100000001010100000000000-0001001000(0 1)06000(0 1)00220(1 2)1(0 1)(3 4)10000000110-00100000000-0-0(0 1)10011010000
+	Hexnachus         ?10100-10000010000010----10-00011010000100110001101010300000-0000100000010000001000000011-10-----0000--0100-010100011000001001000001000----?0-0-10100001010010100000000000-0001000--0113100000000200311000200000-00000000000-0-0001000010011
+	Isurus            ?10110-0000100-000000----00-0110000001000010100101000-300000-0110-00000000?010100010??1-1-00-----0000--1100-000000001000000001?10001210----10-0-0010000012--110000000000?0-0001000--010100110022010010(1 2)000111110-00100000000-0-0001100010000
+	Mustelus          ?10110-1000100-000000----00-0110003001000010000101000-200000-0100?000000000000100010??011-00-----0000--0100-000000011000100001?10011220----1100-0010000002--111000100000?0-0001000--0104000100220010110000000110-0001111000110-110???????000
+	Negaprion         ?10????????1???????00----00-??100?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????000??1??100
+	Notorynchus       ?10100-?0000010000010----00-00011010000000100001101010300000-00?0100000010?00001100000011-10-----0000--0100-010100011000??1001000001000----10-0-10100001010010100000000000-0001000--0113100000000200311000200000-00000000000-0-000100011?010
+	Odontaspis        ?10????????1???????00----00-??100?????00????????????????0?????1??????????????01000?????????????????????????????????????????????????????????1?????????????????????????????????0???????????????????????????????????????????????????0000101?000
+	Parmaturus        ?10????????????????00----?0-??100????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????0000101?000
+	Pristis           ?10100-10000011001001001200-01010001001000110000--000-?00000-02-00001102000110000110011-1-0110012000210-101000001001100011?011?0??0123100120121111100000?0??0-10010001000100001010--00040001002210112?0000000110-0001000000110-1?0100001?000
+	Pteroplatytrygon  ?1?????????????1?0001???????010000200??????0??0????????00??111??0?0?1?0????2?????1?002?????11??????1?1????121?????????????????0?21????1??0????????0??11?????????01?????100-10000????1??????????????0?????????????????????????????000000?1000
+	Somnsiosus        ?101???????00??????00----10-??0110????00????????1?0?????0?????1??????0??0????10000????????0??????????????1?????0??????????0????????????????1??0-???????0??0?0????????????????0???????????0??????????????????????????????????????101000010011
+	'Sphyrna_z'       ?10110-0000100-?00100----00-1-10003001000010100101000-300000-0100-000000000010100010??(0 1)1(0 1)100-----0000--0100-000000011000100001?10021220----10-0-0010000002--111000100000?0-0001000--0103000100120010112000100000-00100000100-0-10000110?0000
+	'Sphyrna_ti'      ?10110-0000100-?00100----00-1-10003001000010100101000-300000-0100-000000000010100010??(0 1)1(0 1)100-----0000--0100-000000011000100001?10021220----10-0-0010000002--111000100000?0-0001000--0103000100120010112000100000-00100000100-0-10000110?0000
+	Stegostoma        ?10????????????????00----?0-??100????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????10011010000
+	Taeniura          ?1?????????0???1?0001????011010000210?10???0??0????????00??1113?0?0?1?0????2?00001?002?????11??????1?1????111?????????????????0?21????1??0?0??????0??11?????????01?????100-10000????1??????????????0?????????????????????????????00001010000
+	Telatrygon        ?1?????????0???????01????0110?000?????10????????????????0?????3??????????????00001?????????????????????????????????????????????????????????0?????????????????????????????????0???????????????????????????????????????????????????01001010000
+	Urolophus         ?1?1?0?-??0?0??100?0101000110100002??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????0???????????????????????????????????????????????????01101010001
 
 ;
 
@@ -293,7 +294,6 @@ BEGIN NOTES;
 	SUT   TAXON = 2 NAME = !color STRING = #000000;
 	SUT   TAXON = 3 NAME = !color STRING = #000000;
 	SUT   TAXON = 4 NAME = !color STRING = #000000;
-	SUT   TAXON = 5 NAME = !color STRING = #000000;
 	SUT   TAXON = 6 NAME = !color STRING = #000000;
 	SUT   TAXON = 7 NAME = !color STRING = #000000;
 	SUT   TAXON = 8 NAME = !color STRING = #000000;
@@ -314,11 +314,11 @@ BEGIN NOTES;
 	SUT   TAXON = 23 NAME = !color STRING = #000000;
 	SUT   TAXON = 24 NAME = !color STRING = #000000;
 	SUT   TAXON = 25 NAME = !color STRING = #000000;
-	SUT   TAXON = 26 NAME = !color STRING = #000000;
 	SUT   TAXON = 27 NAME = !color STRING = #000000;
 	SUT   TAXON = 28 NAME = !color STRING = #000000;
 	SUT   TAXON = 29 NAME = !color STRING = #000000;
 	SUT   TAXON = 30 NAME = !color STRING = #000000;
+	SUT   TAXON = 31 NAME = !color STRING = #000000;
 
 	SU  C = 3 N = color I = 3;
 
@@ -337,32 +337,30 @@ BEGIN NOTES;
 	SU  C = 10 N = color I = 3;
 
 	SU  C = 11 N = color I = 3;
-	SU  T = 5 C = 11 N = color I = 7;
-	SU  T = 8 C = 11 N = color I = 7;
-	SU  T = 12 C = 11 N = color I = 7;
+	SU  T = 6 C = 11 N = color I = 7;
+	SU  T = 9 C = 11 N = color I = 7;
 	SU  T = 13 C = 11 N = color I = 7;
 	SU  T = 14 C = 11 N = color I = 7;
 	SU  T = 15 C = 11 N = color I = 7;
 	SU  T = 16 C = 11 N = color I = 7;
 	SU  T = 17 C = 11 N = color I = 7;
-	SU  T = 19 C = 11 N = color I = 7;
-	SU  T = 22 C = 11 N = color I = 7;
+	SU  T = 18 C = 11 N = color I = 7;
+	SU  T = 20 C = 11 N = color I = 7;
 	SU  T = 23 C = 11 N = color I = 7;
-	SU  T = 26 C = 11 N = color I = 7;
+	SU  T = 27 C = 11 N = color I = 7;
 
 	SU  C = 12 N = color I = 3;
-	SU  T = 5 C = 12 N = color I = 5;
-	SU  T = 8 C = 12 N = color I = 5;
-	SU  T = 12 C = 12 N = color I = 5;
+	SU  T = 6 C = 12 N = color I = 5;
+	SU  T = 9 C = 12 N = color I = 5;
 	SU  T = 13 C = 12 N = color I = 5;
 	SU  T = 14 C = 12 N = color I = 5;
 	SU  T = 15 C = 12 N = color I = 5;
 	SU  T = 16 C = 12 N = color I = 5;
 	SU  T = 17 C = 12 N = color I = 5;
-	SU  T = 19 C = 12 N = color I = 5;
-	SU  T = 22 C = 12 N = color I = 5;
+	SU  T = 18 C = 12 N = color I = 5;
+	SU  T = 20 C = 12 N = color I = 5;
 	SU  T = 23 C = 12 N = color I = 5;
-	SU  T = 26 C = 12 N = color I = 5;
+	SU  T = 27 C = 12 N = color I = 5;
 
 	SU  C = 13 N = color I = 3;
 
@@ -371,29 +369,27 @@ BEGIN NOTES;
 	SU  C = 15 N = color I = 3;
 
 	SU  C = 16 N = color I = 3;
-	SU  T = 8 C = 16 N = color I = 4;
-	SU  T = 12 C = 16 N = color I = 4;
-	SU  T = 14 C = 16 N = color I = 4;
+	SU  T = 9 C = 16 N = color I = 4;
+	SU  T = 13 C = 16 N = color I = 4;
 	SU  T = 15 C = 16 N = color I = 4;
-	SU  T = 17 C = 16 N = color I = 4;
-	SU  T = 22 C = 16 N = color I = 4;
+	SU  T = 16 C = 16 N = color I = 4;
+	SU  T = 18 C = 16 N = color I = 4;
 	SU  T = 23 C = 16 N = color I = 4;
 
 	SU  C = 17 N = color I = 3;
 
 	SU  C = 18 N = color I = 3;
-	SU  T = 5 C = 18 N = color I = 6;
-	SU  T = 8 C = 18 N = color I = 6;
-	SU  T = 12 C = 18 N = color I = 6;
+	SU  T = 6 C = 18 N = color I = 6;
+	SU  T = 9 C = 18 N = color I = 6;
 	SU  T = 13 C = 18 N = color I = 6;
 	SU  T = 14 C = 18 N = color I = 6;
 	SU  T = 15 C = 18 N = color I = 6;
 	SU  T = 16 C = 18 N = color I = 6;
 	SU  T = 17 C = 18 N = color I = 6;
-	SU  T = 19 C = 18 N = color I = 6;
-	SU  T = 22 C = 18 N = color I = 6;
+	SU  T = 18 C = 18 N = color I = 6;
+	SU  T = 20 C = 18 N = color I = 6;
 	SU  T = 23 C = 18 N = color I = 6;
-	SU  T = 26 C = 18 N = color I = 6;
+	SU  T = 27 C = 18 N = color I = 6;
 
 	SU  C = 19 N = color I = 3;
 
@@ -402,7 +398,7 @@ BEGIN NOTES;
 	SU  C = 21 N = color I = 3;
 
 	SU  C = 22 N = color I = 3;
-	SU  T = 8 C = 22 N = color I = 3;
+	SU  T = 9 C = 22 N = color I = 3;
 
 	SU  C = 23 N = color I = 3;
 
@@ -419,34 +415,32 @@ BEGIN NOTES;
 	SU  C = 29 N = color I = 3;
 
 	SU  C = 30 N = color I = 3;
-	SU  T = 5 C = 30 N = color I = 5;
-	SU  T = 8 C = 30 N = color I = 5;
-	SU  T = 12 C = 30 N = color I = 5;
+	SU  T = 6 C = 30 N = color I = 5;
+	SU  T = 9 C = 30 N = color I = 5;
 	SU  T = 13 C = 30 N = color I = 5;
 	SU  T = 14 C = 30 N = color I = 5;
 	SU  T = 15 C = 30 N = color I = 5;
 	SU  T = 16 C = 30 N = color I = 5;
 	SU  T = 17 C = 30 N = color I = 5;
-	SU  T = 19 C = 30 N = color I = 5;
-	SU  T = 22 C = 30 N = color I = 5;
+	SU  T = 18 C = 30 N = color I = 5;
+	SU  T = 20 C = 30 N = color I = 5;
 	SU  T = 23 C = 30 N = color I = 5;
-	SU  T = 26 C = 30 N = color I = 5;
+	SU  T = 27 C = 30 N = color I = 5;
 
 	SU  C = 31 N = color I = 3;
 
 	SU  C = 32 N = color I = 3;
-	SU  T = 5 C = 32 N = color I = 17;
-	SU  T = 8 C = 32 N = color I = 17;
-	SU  T = 12 C = 32 N = color I = 17;
+	SU  T = 6 C = 32 N = color I = 17;
+	SU  T = 9 C = 32 N = color I = 17;
 	SU  T = 13 C = 32 N = color I = 17;
 	SU  T = 14 C = 32 N = color I = 17;
 	SU  T = 15 C = 32 N = color I = 17;
 	SU  T = 16 C = 32 N = color I = 17;
 	SU  T = 17 C = 32 N = color I = 17;
-	SU  T = 19 C = 32 N = color I = 17;
-	SU  T = 22 C = 32 N = color I = 17;
+	SU  T = 18 C = 32 N = color I = 17;
+	SU  T = 20 C = 32 N = color I = 17;
 	SU  T = 23 C = 32 N = color I = 17;
-	SU  T = 26 C = 32 N = color I = 17;
+	SU  T = 27 C = 32 N = color I = 17;
 
 	SU  C = 33 N = color I = 3;
 
@@ -459,18 +453,17 @@ BEGIN NOTES;
 	SU  C = 37 N = color I = 3;
 
 	SU  C = 38 N = color I = 3;
-	SU  T = 5 C = 38 N = color I = 3;
-	SU  T = 8 C = 38 N = color I = 3;
-	SU  T = 12 C = 38 N = color I = 3;
+	SU  T = 6 C = 38 N = color I = 3;
+	SU  T = 9 C = 38 N = color I = 3;
 	SU  T = 13 C = 38 N = color I = 3;
 	SU  T = 14 C = 38 N = color I = 3;
 	SU  T = 15 C = 38 N = color I = 3;
 	SU  T = 16 C = 38 N = color I = 3;
 	SU  T = 17 C = 38 N = color I = 3;
-	SU  T = 19 C = 38 N = color I = 3;
-	SU  T = 22 C = 38 N = color I = 3;
+	SU  T = 18 C = 38 N = color I = 3;
+	SU  T = 20 C = 38 N = color I = 3;
 	SU  T = 23 C = 38 N = color I = 3;
-	SU  T = 26 C = 38 N = color I = 3;
+	SU  T = 27 C = 38 N = color I = 3;
 
 	SU  C = 39 N = color I = 3;
 
@@ -505,31 +498,29 @@ BEGIN NOTES;
 	SU  C = 54 N = color I = 16;
 
 	SU  C = 55 N = color I = 16;
-	SU  T = 5 C = 55 N = color I = 16;
-	SU  T = 8 C = 55 N = color I = 16;
-	SU  T = 12 C = 55 N = color I = 16;
+	SU  T = 6 C = 55 N = color I = 16;
+	SU  T = 9 C = 55 N = color I = 16;
 	SU  T = 13 C = 55 N = color I = 16;
 	SU  T = 14 C = 55 N = color I = 16;
 	SU  T = 15 C = 55 N = color I = 16;
 	SU  T = 16 C = 55 N = color I = 16;
 	SU  T = 17 C = 55 N = color I = 16;
-	SU  T = 19 C = 55 N = color I = 16;
-	SU  T = 22 C = 55 N = color I = 16;
+	SU  T = 18 C = 55 N = color I = 16;
+	SU  T = 20 C = 55 N = color I = 16;
 	SU  T = 23 C = 55 N = color I = 16;
-	SU  T = 26 C = 55 N = color I = 16;
+	SU  T = 27 C = 55 N = color I = 16;
 
 	SU  C = 56 N = color I = 16;
 
 	SU  C = 57 N = color I = 16;
 
 	SU  C = 58 N = color I = 16;
-	SU  T = 8 C = 58 N = color I = 16;
-	SU  T = 12 C = 58 N = color I = 16;
-	SU  T = 14 C = 58 N = color I = 16;
+	SU  T = 9 C = 58 N = color I = 16;
+	SU  T = 13 C = 58 N = color I = 16;
 	SU  T = 15 C = 58 N = color I = 16;
-	SU  T = 17 C = 58 N = color I = 16;
-	SU  T = 19 C = 58 N = color I = 16;
-	SU  T = 22 C = 58 N = color I = 16;
+	SU  T = 16 C = 58 N = color I = 16;
+	SU  T = 18 C = 58 N = color I = 16;
+	SU  T = 20 C = 58 N = color I = 16;
 	SU  T = 23 C = 58 N = color I = 16;
 
 	SU  C = 59 N = color I = 16;
@@ -537,94 +528,88 @@ BEGIN NOTES;
 	SU  C = 60 N = color I = 16;
 
 	SU  C = 61 N = color I = 16;
-	SU  T = 5 C = 61 N = color I = 5;
-	SU  T = 8 C = 61 N = color I = 5;
-	SU  T = 12 C = 61 N = color I = 5;
+	SU  T = 6 C = 61 N = color I = 5;
+	SU  T = 9 C = 61 N = color I = 5;
 	SU  T = 13 C = 61 N = color I = 5;
 	SU  T = 14 C = 61 N = color I = 5;
 	SU  T = 15 C = 61 N = color I = 5;
 	SU  T = 16 C = 61 N = color I = 5;
 	SU  T = 17 C = 61 N = color I = 5;
-	SU  T = 19 C = 61 N = color I = 5;
-	SU  T = 22 C = 61 N = color I = 5;
+	SU  T = 18 C = 61 N = color I = 5;
+	SU  T = 20 C = 61 N = color I = 5;
 	SU  T = 23 C = 61 N = color I = 5;
-	SU  T = 26 C = 61 N = color I = 5;
+	SU  T = 27 C = 61 N = color I = 5;
 
 	SU  C = 62 N = color I = 16;
 
 	SU  C = 63 N = color I = 16;
 
 	SU  C = 64 N = color I = 16;
-	SU  T = 8 C = 64 N = color I = 16;
-	SU  T = 12 C = 64 N = color I = 16;
-	SU  T = 14 C = 64 N = color I = 16;
+	SU  T = 9 C = 64 N = color I = 16;
+	SU  T = 13 C = 64 N = color I = 16;
 	SU  T = 15 C = 64 N = color I = 16;
-	SU  T = 17 C = 64 N = color I = 16;
-	SU  T = 19 C = 64 N = color I = 16;
-	SU  T = 22 C = 64 N = color I = 16;
+	SU  T = 16 C = 64 N = color I = 16;
+	SU  T = 18 C = 64 N = color I = 16;
+	SU  T = 20 C = 64 N = color I = 16;
 	SU  T = 23 C = 64 N = color I = 16;
 
 	SU  C = 65 N = color I = 16;
 
 	SU  C = 66 N = color I = 16;
-	SU  T = 5 C = 66 N = color I = 16;
-	SU  T = 8 C = 66 N = color I = 16;
-	SU  T = 12 C = 66 N = color I = 16;
+	SU  T = 6 C = 66 N = color I = 16;
+	SU  T = 9 C = 66 N = color I = 16;
 	SU  T = 13 C = 66 N = color I = 16;
 	SU  T = 14 C = 66 N = color I = 16;
 	SU  T = 15 C = 66 N = color I = 16;
 	SU  T = 16 C = 66 N = color I = 16;
 	SU  T = 17 C = 66 N = color I = 16;
-	SU  T = 19 C = 66 N = color I = 16;
-	SU  T = 22 C = 66 N = color I = 16;
+	SU  T = 18 C = 66 N = color I = 16;
+	SU  T = 20 C = 66 N = color I = 16;
 	SU  T = 23 C = 66 N = color I = 16;
-	SU  T = 26 C = 66 N = color I = 16;
+	SU  T = 27 C = 66 N = color I = 16;
 
 	SU  C = 67 N = color I = 16;
 
 	SU  C = 68 N = color I = 16;
-	SU  T = 8 C = 68 N = color I = 16;
-	SU  T = 12 C = 68 N = color I = 16;
-	SU  T = 14 C = 68 N = color I = 16;
+	SU  T = 9 C = 68 N = color I = 16;
+	SU  T = 13 C = 68 N = color I = 16;
 	SU  T = 15 C = 68 N = color I = 16;
-	SU  T = 17 C = 68 N = color I = 16;
-	SU  T = 19 C = 68 N = color I = 16;
-	SU  T = 22 C = 68 N = color I = 16;
+	SU  T = 16 C = 68 N = color I = 16;
+	SU  T = 18 C = 68 N = color I = 16;
+	SU  T = 20 C = 68 N = color I = 16;
 	SU  T = 23 C = 68 N = color I = 16;
 
 	SU  C = 69 N = color I = 16;
 
 	SU  C = 70 N = color I = 16;
-	SU  T = 5 C = 70 N = color I = 17;
-	SU  T = 8 C = 70 N = color I = 17;
-	SU  T = 12 C = 70 N = color I = 17;
+	SU  T = 6 C = 70 N = color I = 17;
+	SU  T = 9 C = 70 N = color I = 17;
 	SU  T = 13 C = 70 N = color I = 17;
 	SU  T = 14 C = 70 N = color I = 17;
 	SU  T = 15 C = 70 N = color I = 17;
 	SU  T = 16 C = 70 N = color I = 17;
 	SU  T = 17 C = 70 N = color I = 17;
-	SU  T = 19 C = 70 N = color I = 17;
-	SU  T = 22 C = 70 N = color I = 17;
+	SU  T = 18 C = 70 N = color I = 17;
+	SU  T = 20 C = 70 N = color I = 17;
 	SU  T = 23 C = 70 N = color I = 17;
-	SU  T = 26 C = 70 N = color I = 17;
+	SU  T = 27 C = 70 N = color I = 17;
 
 	SU  C = 71 N = color I = 16;
 
 	SU  C = 72 N = color I = 16;
 
 	SU  C = 73 N = color I = 16;
-	SU  T = 5 C = 73 N = color I = 17;
-	SU  T = 8 C = 73 N = color I = 17;
-	SU  T = 12 C = 73 N = color I = 17;
+	SU  T = 6 C = 73 N = color I = 17;
+	SU  T = 9 C = 73 N = color I = 17;
 	SU  T = 13 C = 73 N = color I = 17;
 	SU  T = 14 C = 73 N = color I = 17;
 	SU  T = 15 C = 73 N = color I = 17;
 	SU  T = 16 C = 73 N = color I = 17;
 	SU  T = 17 C = 73 N = color I = 17;
-	SU  T = 19 C = 73 N = color I = 17;
-	SU  T = 22 C = 73 N = color I = 17;
+	SU  T = 18 C = 73 N = color I = 17;
+	SU  T = 20 C = 73 N = color I = 17;
 	SU  T = 23 C = 73 N = color I = 17;
-	SU  T = 26 C = 73 N = color I = 17;
+	SU  T = 27 C = 73 N = color I = 17;
 
 	SU  C = 74 N = color I = 16;
 
@@ -635,32 +620,30 @@ BEGIN NOTES;
 	SU  C = 77 N = color I = 16;
 
 	SU  C = 78 N = color I = 16;
-	SU  T = 5 C = 78 N = color I = 17;
-	SU  T = 8 C = 78 N = color I = 17;
-	SU  T = 12 C = 78 N = color I = 17;
+	SU  T = 6 C = 78 N = color I = 17;
+	SU  T = 9 C = 78 N = color I = 17;
 	SU  T = 13 C = 78 N = color I = 17;
 	SU  T = 14 C = 78 N = color I = 17;
 	SU  T = 15 C = 78 N = color I = 17;
 	SU  T = 16 C = 78 N = color I = 17;
 	SU  T = 17 C = 78 N = color I = 17;
-	SU  T = 19 C = 78 N = color I = 17;
-	SU  T = 22 C = 78 N = color I = 17;
+	SU  T = 18 C = 78 N = color I = 17;
+	SU  T = 20 C = 78 N = color I = 17;
 	SU  T = 23 C = 78 N = color I = 17;
-	SU  T = 26 C = 78 N = color I = 17;
+	SU  T = 27 C = 78 N = color I = 17;
 
 	SU  C = 79 N = color I = 16;
-	SU  T = 5 C = 79 N = color I = 17;
-	SU  T = 8 C = 79 N = color I = 17;
-	SU  T = 12 C = 79 N = color I = 17;
+	SU  T = 6 C = 79 N = color I = 17;
+	SU  T = 9 C = 79 N = color I = 17;
 	SU  T = 13 C = 79 N = color I = 17;
 	SU  T = 14 C = 79 N = color I = 17;
 	SU  T = 15 C = 79 N = color I = 17;
 	SU  T = 16 C = 79 N = color I = 17;
 	SU  T = 17 C = 79 N = color I = 17;
-	SU  T = 19 C = 79 N = color I = 17;
-	SU  T = 22 C = 79 N = color I = 17;
+	SU  T = 18 C = 79 N = color I = 17;
+	SU  T = 20 C = 79 N = color I = 17;
 	SU  T = 23 C = 79 N = color I = 17;
-	SU  T = 26 C = 79 N = color I = 17;
+	SU  T = 27 C = 79 N = color I = 17;
 
 	SU  C = 80 N = color I = 16;
 
@@ -669,18 +652,17 @@ BEGIN NOTES;
 	SU  C = 82 N = color I = 16;
 
 	SU  C = 83 N = color I = 16;
-	SU  T = 5 C = 83 N = color I = 16;
-	SU  T = 8 C = 83 N = color I = 16;
-	SU  T = 12 C = 83 N = color I = 16;
+	SU  T = 6 C = 83 N = color I = 16;
+	SU  T = 9 C = 83 N = color I = 16;
 	SU  T = 13 C = 83 N = color I = 16;
 	SU  T = 14 C = 83 N = color I = 16;
 	SU  T = 15 C = 83 N = color I = 16;
 	SU  T = 16 C = 83 N = color I = 16;
 	SU  T = 17 C = 83 N = color I = 16;
-	SU  T = 19 C = 83 N = color I = 16;
-	SU  T = 22 C = 83 N = color I = 16;
+	SU  T = 18 C = 83 N = color I = 16;
+	SU  T = 20 C = 83 N = color I = 16;
 	SU  T = 23 C = 83 N = color I = 16;
-	SU  T = 26 C = 83 N = color I = 16;
+	SU  T = 27 C = 83 N = color I = 16;
 
 	SU  C = 84 N = color I = 16;
 
@@ -689,63 +671,59 @@ BEGIN NOTES;
 	SU  C = 86 N = color I = 16;
 
 	SU  C = 87 N = color I = 16;
-	SU  T = 5 C = 87 N = color I = 17;
-	SU  T = 8 C = 87 N = color I = 17;
-	SU  T = 12 C = 87 N = color I = 17;
+	SU  T = 6 C = 87 N = color I = 17;
+	SU  T = 9 C = 87 N = color I = 17;
 	SU  T = 13 C = 87 N = color I = 17;
 	SU  T = 14 C = 87 N = color I = 17;
 	SU  T = 15 C = 87 N = color I = 17;
 	SU  T = 16 C = 87 N = color I = 17;
 	SU  T = 17 C = 87 N = color I = 17;
-	SU  T = 19 C = 87 N = color I = 17;
-	SU  T = 22 C = 87 N = color I = 17;
+	SU  T = 18 C = 87 N = color I = 17;
+	SU  T = 20 C = 87 N = color I = 17;
 	SU  T = 23 C = 87 N = color I = 17;
-	SU  T = 26 C = 87 N = color I = 17;
+	SU  T = 27 C = 87 N = color I = 17;
 
 	SU  C = 88 N = color I = 16;
-	SU  T = 5 C = 88 N = color I = 17;
-	SU  T = 8 C = 88 N = color I = 17;
-	SU  T = 12 C = 88 N = color I = 17;
+	SU  T = 6 C = 88 N = color I = 17;
+	SU  T = 9 C = 88 N = color I = 17;
 	SU  T = 13 C = 88 N = color I = 17;
 	SU  T = 14 C = 88 N = color I = 17;
 	SU  T = 15 C = 88 N = color I = 17;
 	SU  T = 16 C = 88 N = color I = 17;
 	SU  T = 17 C = 88 N = color I = 17;
-	SU  T = 19 C = 88 N = color I = 17;
-	SU  T = 22 C = 88 N = color I = 17;
+	SU  T = 18 C = 88 N = color I = 17;
+	SU  T = 20 C = 88 N = color I = 17;
 	SU  T = 23 C = 88 N = color I = 17;
-	SU  T = 26 C = 88 N = color I = 17;
+	SU  T = 27 C = 88 N = color I = 17;
 
 	SU  C = 89 N = color I = 16;
-	SU  T = 5 C = 89 N = color I = 17;
-	TEXT   TAXON = 8 CHARACTER = 89 TEXT = Shirai_1992;
-	SU  T = 8 C = 89 N = color I = 17;
-	SU  T = 12 C = 89 N = color I = 17;
+	SU  T = 6 C = 89 N = color I = 17;
+	TEXT   TAXON = 9 CHARACTER = 89 TEXT = Shirai_1992;
+	SU  T = 9 C = 89 N = color I = 17;
 	SU  T = 13 C = 89 N = color I = 17;
 	SU  T = 14 C = 89 N = color I = 17;
-	TEXT   TAXON = 15 CHARACTER = 89 TEXT = Shirai_1992;
 	SU  T = 15 C = 89 N = color I = 17;
+	TEXT   TAXON = 16 CHARACTER = 89 TEXT = Shirai_1992;
 	SU  T = 16 C = 89 N = color I = 17;
 	SU  T = 17 C = 89 N = color I = 17;
-	TEXT   TAXON = 19 CHARACTER = 89 TEXT = Shirai_1992;
-	SU  T = 19 C = 89 N = color I = 17;
-	SU  T = 22 C = 89 N = color I = 17;
+	SU  T = 18 C = 89 N = color I = 17;
+	TEXT   TAXON = 20 CHARACTER = 89 TEXT = Shirai_1992;
+	SU  T = 20 C = 89 N = color I = 17;
 	SU  T = 23 C = 89 N = color I = 17;
-	SU  T = 26 C = 89 N = color I = 17;
+	SU  T = 27 C = 89 N = color I = 17;
 
 	SU  C = 90 N = color I = 16;
-	SU  T = 5 C = 90 N = color I = 17;
-	SU  T = 8 C = 90 N = color I = 17;
-	SU  T = 12 C = 90 N = color I = 17;
+	SU  T = 6 C = 90 N = color I = 17;
+	SU  T = 9 C = 90 N = color I = 17;
 	SU  T = 13 C = 90 N = color I = 17;
 	SU  T = 14 C = 90 N = color I = 17;
 	SU  T = 15 C = 90 N = color I = 17;
 	SU  T = 16 C = 90 N = color I = 17;
 	SU  T = 17 C = 90 N = color I = 17;
-	SU  T = 19 C = 90 N = color I = 17;
-	SU  T = 22 C = 90 N = color I = 17;
+	SU  T = 18 C = 90 N = color I = 17;
+	SU  T = 20 C = 90 N = color I = 17;
 	SU  T = 23 C = 90 N = color I = 17;
-	SU  T = 26 C = 90 N = color I = 17;
+	SU  T = 27 C = 90 N = color I = 17;
 
 	SU  C = 91 N = color I = 6;
 
@@ -760,18 +738,17 @@ BEGIN NOTES;
 	SU  C = 96 N = color I = 6;
 
 	SU  C = 97 N = color I = 6;
-	SU  T = 8 C = 97 N = color I = 7;
-	SU  T = 12 C = 97 N = color I = 7;
-	SU  T = 14 C = 97 N = color I = 7;
-	SU  T = 15 C = 97 N = color I = 5;
-	SU  T = 22 C = 97 N = color I = 7;
+	SU  T = 9 C = 97 N = color I = 7;
+	SU  T = 13 C = 97 N = color I = 7;
+	SU  T = 15 C = 97 N = color I = 7;
+	SU  T = 16 C = 97 N = color I = 5;
 	SU  T = 23 C = 97 N = color I = 7;
 
 	SU  C = 98 N = color I = 6;
 
 	SU  C = 99 N = color I = 6;
-	SU  T = 14 C = 99 N = color I = 7;
 	SU  T = 15 C = 99 N = color I = 7;
+	SU  T = 16 C = 99 N = color I = 7;
 
 	SU  C = 100 N = color I = 6;
 
@@ -782,18 +759,17 @@ BEGIN NOTES;
 	SU  C = 103 N = color I = 6;
 
 	SU  C = 104 N = color I = 6;
-	SU  T = 5 C = 104 N = color I = 14;
-	SU  T = 8 C = 104 N = color I = 14;
-	SU  T = 12 C = 104 N = color I = 14;
+	SU  T = 6 C = 104 N = color I = 14;
+	SU  T = 9 C = 104 N = color I = 14;
 	SU  T = 13 C = 104 N = color I = 14;
 	SU  T = 14 C = 104 N = color I = 14;
 	SU  T = 15 C = 104 N = color I = 14;
 	SU  T = 16 C = 104 N = color I = 14;
 	SU  T = 17 C = 104 N = color I = 14;
-	SU  T = 19 C = 104 N = color I = 14;
-	SU  T = 22 C = 104 N = color I = 14;
+	SU  T = 18 C = 104 N = color I = 14;
+	SU  T = 20 C = 104 N = color I = 14;
 	SU  T = 23 C = 104 N = color I = 14;
-	SU  T = 26 C = 104 N = color I = 14;
+	SU  T = 27 C = 104 N = color I = 14;
 
 	SU  C = 105 N = color I = 6;
 
@@ -806,18 +782,17 @@ BEGIN NOTES;
 	SU  C = 109 N = color I = 6;
 
 	SU  C = 110 N = color I = 6;
-	SU  T = 5 C = 110 N = color I = 14;
-	SU  T = 8 C = 110 N = color I = 14;
-	SU  T = 12 C = 110 N = color I = 14;
+	SU  T = 6 C = 110 N = color I = 14;
+	SU  T = 9 C = 110 N = color I = 14;
 	SU  T = 13 C = 110 N = color I = 14;
 	SU  T = 14 C = 110 N = color I = 14;
 	SU  T = 15 C = 110 N = color I = 14;
 	SU  T = 16 C = 110 N = color I = 14;
 	SU  T = 17 C = 110 N = color I = 14;
-	SU  T = 19 C = 110 N = color I = 14;
-	SU  T = 22 C = 110 N = color I = 14;
+	SU  T = 18 C = 110 N = color I = 14;
+	SU  T = 20 C = 110 N = color I = 14;
 	SU  T = 23 C = 110 N = color I = 14;
-	SU  T = 26 C = 110 N = color I = 14;
+	SU  T = 27 C = 110 N = color I = 14;
 
 	SU  C = 111 N = color I = 6;
 
@@ -844,18 +819,17 @@ BEGIN NOTES;
 	SU  C = 122 N = color I = 6;
 
 	SU  C = 123 N = color I = 6;
-	SU  T = 5 C = 123 N = color I = 17;
-	SU  T = 8 C = 123 N = color I = 17;
-	SU  T = 12 C = 123 N = color I = 17;
+	SU  T = 6 C = 123 N = color I = 17;
+	SU  T = 9 C = 123 N = color I = 17;
 	SU  T = 13 C = 123 N = color I = 17;
 	SU  T = 14 C = 123 N = color I = 17;
 	SU  T = 15 C = 123 N = color I = 17;
 	SU  T = 16 C = 123 N = color I = 17;
 	SU  T = 17 C = 123 N = color I = 17;
-	SU  T = 19 C = 123 N = color I = 17;
-	SU  T = 22 C = 123 N = color I = 17;
+	SU  T = 18 C = 123 N = color I = 17;
+	SU  T = 20 C = 123 N = color I = 17;
 	SU  T = 23 C = 123 N = color I = 17;
-	SU  T = 26 C = 123 N = color I = 17;
+	SU  T = 27 C = 123 N = color I = 17;
 
 	SU  C = 124 N = color I = 6;
 
@@ -872,34 +846,32 @@ BEGIN NOTES;
 	SU  C = 130 N = color I = 6;
 
 	SU  C = 131 N = color I = 6;
-	SU  T = 5 C = 131 N = color I = 17;
-	SU  T = 8 C = 131 N = color I = 17;
-	SU  T = 12 C = 131 N = color I = 17;
+	SU  T = 6 C = 131 N = color I = 17;
+	SU  T = 9 C = 131 N = color I = 17;
 	SU  T = 13 C = 131 N = color I = 17;
 	SU  T = 14 C = 131 N = color I = 17;
 	SU  T = 15 C = 131 N = color I = 17;
 	SU  T = 16 C = 131 N = color I = 17;
 	SU  T = 17 C = 131 N = color I = 17;
-	SU  T = 19 C = 131 N = color I = 17;
-	SU  T = 22 C = 131 N = color I = 17;
+	SU  T = 18 C = 131 N = color I = 17;
+	SU  T = 20 C = 131 N = color I = 17;
 	SU  T = 23 C = 131 N = color I = 17;
-	SU  T = 26 C = 131 N = color I = 17;
+	SU  T = 27 C = 131 N = color I = 17;
 
 	SU  C = 132 N = color I = 1;
 
 	SU  C = 133 N = color I = 1;
-	SU  T = 5 C = 133 N = color I = 7;
-	SU  T = 8 C = 133 N = color I = 7;
-	SU  T = 12 C = 133 N = color I = 7;
+	SU  T = 6 C = 133 N = color I = 7;
+	SU  T = 9 C = 133 N = color I = 7;
 	SU  T = 13 C = 133 N = color I = 7;
 	SU  T = 14 C = 133 N = color I = 7;
 	SU  T = 15 C = 133 N = color I = 7;
 	SU  T = 16 C = 133 N = color I = 7;
 	SU  T = 17 C = 133 N = color I = 7;
-	SU  T = 19 C = 133 N = color I = 7;
-	SU  T = 22 C = 133 N = color I = 7;
+	SU  T = 18 C = 133 N = color I = 7;
+	SU  T = 20 C = 133 N = color I = 7;
 	SU  T = 23 C = 133 N = color I = 7;
-	SU  T = 26 C = 133 N = color I = 7;
+	SU  T = 27 C = 133 N = color I = 7;
 
 	SU  C = 134 N = color I = 1;
 
@@ -930,18 +902,17 @@ BEGIN NOTES;
 	SU  C = 147 N = color I = 1;
 
 	SU  C = 148 N = color I = 1;
-	SU  T = 5 C = 148 N = color I = 7;
-	SU  T = 8 C = 148 N = color I = 7;
-	SU  T = 12 C = 148 N = color I = 7;
+	SU  T = 6 C = 148 N = color I = 7;
+	SU  T = 9 C = 148 N = color I = 7;
 	SU  T = 13 C = 148 N = color I = 7;
 	SU  T = 14 C = 148 N = color I = 7;
 	SU  T = 15 C = 148 N = color I = 7;
 	SU  T = 16 C = 148 N = color I = 7;
 	SU  T = 17 C = 148 N = color I = 7;
-	SU  T = 19 C = 148 N = color I = 7;
-	SU  T = 22 C = 148 N = color I = 7;
+	SU  T = 18 C = 148 N = color I = 7;
+	SU  T = 20 C = 148 N = color I = 7;
 	SU  T = 23 C = 148 N = color I = 7;
-	SU  T = 26 C = 148 N = color I = 7;
+	SU  T = 27 C = 148 N = color I = 7;
 
 	SU  C = 149 N = color I = 1;
 
@@ -954,79 +925,74 @@ BEGIN NOTES;
 	SU  C = 153 N = color I = 1;
 
 	SU  C = 154 N = color I = 1;
-	SU  T = 5 C = 154 N = color I = 7;
-	SU  T = 8 C = 154 N = color I = 7;
-	SU  T = 12 C = 154 N = color I = 7;
+	SU  T = 6 C = 154 N = color I = 7;
+	SU  T = 9 C = 154 N = color I = 7;
 	SU  T = 13 C = 154 N = color I = 7;
 	SU  T = 14 C = 154 N = color I = 7;
 	SU  T = 15 C = 154 N = color I = 7;
 	SU  T = 16 C = 154 N = color I = 7;
 	SU  T = 17 C = 154 N = color I = 7;
-	SU  T = 19 C = 154 N = color I = 7;
-	SU  T = 22 C = 154 N = color I = 7;
+	SU  T = 18 C = 154 N = color I = 7;
+	SU  T = 20 C = 154 N = color I = 7;
 	SU  T = 23 C = 154 N = color I = 7;
-	SU  T = 26 C = 154 N = color I = 7;
+	SU  T = 27 C = 154 N = color I = 7;
 
 	SU  C = 155 N = color I = 1;
-	SU  T = 5 C = 155 N = color I = 17;
-	SU  T = 8 C = 155 N = color I = 17;
-	SU  T = 12 C = 155 N = color I = 17;
+	SU  T = 6 C = 155 N = color I = 17;
+	SU  T = 9 C = 155 N = color I = 17;
 	SU  T = 13 C = 155 N = color I = 17;
-	TEXT   TAXON = 14 CHARACTER = 155 TEXT = Shirai_1992_Pl_55G;
 	SU  T = 14 C = 155 N = color I = 17;
+	TEXT   TAXON = 15 CHARACTER = 155 TEXT = Shirai_1992_Pl_55G;
 	SU  T = 15 C = 155 N = color I = 17;
 	SU  T = 16 C = 155 N = color I = 17;
 	SU  T = 17 C = 155 N = color I = 17;
-	SU  T = 19 C = 155 N = color I = 17;
-	SU  T = 22 C = 155 N = color I = 17;
+	SU  T = 18 C = 155 N = color I = 17;
+	SU  T = 20 C = 155 N = color I = 17;
 	SU  T = 23 C = 155 N = color I = 17;
-	SU  T = 26 C = 155 N = color I = 17;
+	SU  T = 27 C = 155 N = color I = 17;
 
 	SU  C = 156 N = color I = 1;
 
 	SU  C = 157 N = color I = 1;
 
 	SU  C = 158 N = color I = 1;
-	SU  T = 5 C = 158 N = color I = 14;
-	SU  T = 8 C = 158 N = color I = 14;
-	SU  T = 12 C = 158 N = color I = 14;
+	SU  T = 6 C = 158 N = color I = 14;
+	SU  T = 9 C = 158 N = color I = 14;
 	SU  T = 13 C = 158 N = color I = 14;
 	SU  T = 14 C = 158 N = color I = 14;
 	SU  T = 15 C = 158 N = color I = 14;
 	SU  T = 16 C = 158 N = color I = 14;
 	SU  T = 17 C = 158 N = color I = 14;
-	SU  T = 19 C = 158 N = color I = 14;
-	SU  T = 22 C = 158 N = color I = 14;
+	SU  T = 18 C = 158 N = color I = 14;
+	SU  T = 20 C = 158 N = color I = 14;
 	SU  T = 23 C = 158 N = color I = 14;
-	SU  T = 26 C = 158 N = color I = 14;
+	SU  T = 27 C = 158 N = color I = 14;
 
 	SU  C = 159 N = color I = 1;
-	SU  T = 5 C = 159 N = color I = 17;
-	SU  T = 8 C = 159 N = color I = 17;
-	SU  T = 12 C = 159 N = color I = 17;
+	SU  T = 6 C = 159 N = color I = 17;
+	SU  T = 9 C = 159 N = color I = 17;
 	SU  T = 13 C = 159 N = color I = 17;
 	SU  T = 14 C = 159 N = color I = 17;
 	SU  T = 15 C = 159 N = color I = 17;
 	SU  T = 16 C = 159 N = color I = 17;
 	SU  T = 17 C = 159 N = color I = 17;
-	SU  T = 19 C = 159 N = color I = 17;
-	SU  T = 22 C = 159 N = color I = 17;
+	SU  T = 18 C = 159 N = color I = 17;
+	SU  T = 20 C = 159 N = color I = 17;
 	SU  T = 23 C = 159 N = color I = 17;
-	SU  T = 26 C = 159 N = color I = 17;
+	SU  T = 27 C = 159 N = color I = 17;
 
 	SU  C = 160 N = color I = 1;
-	SU  T = 5 C = 160 N = color I = 17;
-	SU  T = 8 C = 160 N = color I = 17;
-	SU  T = 12 C = 160 N = color I = 17;
+	SU  T = 6 C = 160 N = color I = 17;
+	SU  T = 9 C = 160 N = color I = 17;
 	SU  T = 13 C = 160 N = color I = 17;
 	SU  T = 14 C = 160 N = color I = 17;
 	SU  T = 15 C = 160 N = color I = 17;
 	SU  T = 16 C = 160 N = color I = 17;
 	SU  T = 17 C = 160 N = color I = 17;
-	SU  T = 19 C = 160 N = color I = 17;
-	SU  T = 22 C = 160 N = color I = 17;
+	SU  T = 18 C = 160 N = color I = 17;
+	SU  T = 20 C = 160 N = color I = 17;
 	SU  T = 23 C = 160 N = color I = 17;
-	SU  T = 26 C = 160 N = color I = 17;
+	SU  T = 27 C = 160 N = color I = 17;
 
 	SU  C = 161 N = color I = 12;
 
@@ -1058,13 +1024,12 @@ BEGIN NOTES;
 	SU  C = 173 N = color I = 12;
 
 	SU  C = 174 N = color I = 9;
-	SU  T = 8 C = 174 N = color I = 9;
-	SU  T = 12 C = 174 N = color I = 9;
-	SU  T = 14 C = 174 N = color I = 9;
+	SU  T = 9 C = 174 N = color I = 9;
+	SU  T = 13 C = 174 N = color I = 9;
 	SU  T = 15 C = 174 N = color I = 9;
-	SU  T = 17 C = 174 N = color I = 9;
-	SU  T = 19 C = 174 N = color I = 9;
-	SU  T = 22 C = 174 N = color I = 9;
+	SU  T = 16 C = 174 N = color I = 9;
+	SU  T = 18 C = 174 N = color I = 9;
+	SU  T = 20 C = 174 N = color I = 9;
 	SU  T = 23 C = 174 N = color I = 9;
 
 	SU  C = 175 N = color I = 9;
@@ -1090,52 +1055,48 @@ BEGIN NOTES;
 	SU  C = 185 N = color I = 8;
 
 	SU  C = 186 N = color I = 8;
-	SU  T = 5 C = 186 N = color I = 8;
-	SU  T = 8 C = 186 N = color I = 8;
-	SU  T = 12 C = 186 N = color I = 8;
+	SU  T = 6 C = 186 N = color I = 8;
+	SU  T = 9 C = 186 N = color I = 8;
 	SU  T = 13 C = 186 N = color I = 8;
 	SU  T = 14 C = 186 N = color I = 8;
 	SU  T = 15 C = 186 N = color I = 8;
 	SU  T = 16 C = 186 N = color I = 8;
 	SU  T = 17 C = 186 N = color I = 8;
-	SU  T = 19 C = 186 N = color I = 8;
-	SU  T = 22 C = 186 N = color I = 8;
+	SU  T = 18 C = 186 N = color I = 8;
+	SU  T = 20 C = 186 N = color I = 8;
 	SU  T = 23 C = 186 N = color I = 8;
-	SU  T = 26 C = 186 N = color I = 8;
+	SU  T = 27 C = 186 N = color I = 8;
 
 	SU  C = 187 N = color I = 8;
 
 	SU  C = 188 N = color I = 8;
-	SU  T = 5 C = 188 N = color I = 14;
-	SU  T = 8 C = 188 N = color I = 14;
-	SU  T = 12 C = 188 N = color I = 14;
+	SU  T = 6 C = 188 N = color I = 14;
+	SU  T = 9 C = 188 N = color I = 14;
 	SU  T = 13 C = 188 N = color I = 14;
 	SU  T = 14 C = 188 N = color I = 14;
 	SU  T = 15 C = 188 N = color I = 14;
 	SU  T = 16 C = 188 N = color I = 14;
 	SU  T = 17 C = 188 N = color I = 14;
-	SU  T = 19 C = 188 N = color I = 14;
-	SU  T = 22 C = 188 N = color I = 14;
+	SU  T = 18 C = 188 N = color I = 14;
+	SU  T = 20 C = 188 N = color I = 14;
 	SU  T = 23 C = 188 N = color I = 14;
-	SU  T = 26 C = 188 N = color I = 14;
+	SU  T = 27 C = 188 N = color I = 14;
 
 	SU  C = 189 N = color I = 8;
-	SU  T = 8 C = 189 N = color I = 6;
-	SU  T = 12 C = 189 N = color I = 6;
-	SU  T = 14 C = 189 N = color I = 6;
+	SU  T = 9 C = 189 N = color I = 6;
+	SU  T = 13 C = 189 N = color I = 6;
 	SU  T = 15 C = 189 N = color I = 6;
-	SU  T = 17 C = 189 N = color I = 6;
-	SU  T = 22 C = 189 N = color I = 6;
+	SU  T = 16 C = 189 N = color I = 6;
+	SU  T = 18 C = 189 N = color I = 6;
 	SU  T = 23 C = 189 N = color I = 6;
 
 	SU  C = 190 N = color I = 8;
-	SU  T = 8 C = 190 N = color I = 8;
-	SU  T = 12 C = 190 N = color I = 8;
-	SU  T = 14 C = 190 N = color I = 8;
+	SU  T = 9 C = 190 N = color I = 8;
+	SU  T = 13 C = 190 N = color I = 8;
 	SU  T = 15 C = 190 N = color I = 8;
-	SU  T = 17 C = 190 N = color I = 8;
-	SU  T = 19 C = 190 N = color I = 8;
-	SU  T = 22 C = 190 N = color I = 8;
+	SU  T = 16 C = 190 N = color I = 8;
+	SU  T = 18 C = 190 N = color I = 8;
+	SU  T = 20 C = 190 N = color I = 8;
 	SU  T = 23 C = 190 N = color I = 8;
 
 	SU  C = 191 N = color I = 8;
@@ -1145,18 +1106,17 @@ BEGIN NOTES;
 	SU  C = 193 N = color I = 8;
 
 	SU  C = 194 N = color I = 8;
-	SU  T = 5 C = 194 N = color I = 14;
-	SU  T = 8 C = 194 N = color I = 14;
-	SU  T = 12 C = 194 N = color I = 14;
+	SU  T = 6 C = 194 N = color I = 14;
+	SU  T = 9 C = 194 N = color I = 14;
 	SU  T = 13 C = 194 N = color I = 14;
 	SU  T = 14 C = 194 N = color I = 14;
 	SU  T = 15 C = 194 N = color I = 14;
 	SU  T = 16 C = 194 N = color I = 14;
 	SU  T = 17 C = 194 N = color I = 14;
-	SU  T = 19 C = 194 N = color I = 14;
-	SU  T = 22 C = 194 N = color I = 14;
+	SU  T = 18 C = 194 N = color I = 14;
+	SU  T = 20 C = 194 N = color I = 14;
 	SU  T = 23 C = 194 N = color I = 14;
-	SU  T = 26 C = 194 N = color I = 14;
+	SU  T = 27 C = 194 N = color I = 14;
 
 	SU  C = 195 N = color I = 8;
 
@@ -1166,18 +1126,17 @@ BEGIN NOTES;
 	SU  C = 197 N = color I = 8;
 
 	SU  C = 198 N = color I = 8;
-	SU  T = 5 C = 198 N = color I = 5;
-	SU  T = 8 C = 198 N = color I = 5;
-	SU  T = 12 C = 198 N = color I = 5;
+	SU  T = 6 C = 198 N = color I = 5;
+	SU  T = 9 C = 198 N = color I = 5;
 	SU  T = 13 C = 198 N = color I = 5;
 	SU  T = 14 C = 198 N = color I = 5;
 	SU  T = 15 C = 198 N = color I = 5;
 	SU  T = 16 C = 198 N = color I = 5;
 	SU  T = 17 C = 198 N = color I = 5;
-	SU  T = 19 C = 198 N = color I = 5;
-	SU  T = 22 C = 198 N = color I = 5;
+	SU  T = 18 C = 198 N = color I = 5;
+	SU  T = 20 C = 198 N = color I = 5;
 	SU  T = 23 C = 198 N = color I = 5;
-	SU  T = 26 C = 198 N = color I = 5;
+	SU  T = 27 C = 198 N = color I = 5;
 
 	SU  C = 199 N = color I = 8;
 
@@ -1233,13 +1192,11 @@ BEGIN NOTES;
 
 	SU  C = 225 N = color I = 8;
 
-	AN T = 9  A = 0 DC = 2026.1.19.10.6.28 DM = 2026.1.19.10.6.42 ID = 019bd76fd1e2306 I = _ TF = (CM ) ;
+	AN T = 10  A = 0 DC = 2026.1.19.10.6.28 DM = 2026.1.19.10.6.42 ID = 019bd76fd1e2306 I = _ TF = (CM ) ;
 
-	AN T = 15  A = 0 DC = 2022.4.7.19.38.27 DM = 2022.4.7.19.38.27 ID = 0180051b27ab33 I = _ TF = (CM ) ;
+	AN T = 16  A = 0 DC = 2022.4.7.19.38.27 DM = 2022.4.7.19.38.27 ID = 0180051b27ab33 I = _ TF = (CM ) ;
 
-	AN T = 19  A = 0 DC = 2022.6.21.16.17.36 DM = 2022.7.13.15.44.7 ID = 018186a0388869 I = _ TF = (CM ) TF = (R 'Shirai, 1992^nShirai, 1996^nMaisey, 2004^nLane & Maisey 2009');
-
-	AN T = 22  A = 0 DC = 2026.2.23.11.1.8 DM = 2026.2.23.11.1.29 ID = 019c8be0726c317 I = _ TF = (CM kept_coding_of_jambura_2023_) TF = (R Jambura_2023_);
+	AN T = 20  A = 0 DC = 2022.6.21.16.17.36 DM = 2022.7.13.15.44.7 ID = 018186a0388869 I = _ TF = (CM ) TF = (R 'Shirai, 1992^nShirai, 1996^nMaisey, 2004^nLane & Maisey 2009');
 
 	AN T = 23  A = 0 DC = 2022.8.5.11.36.46 DM = 2022.8.5.11.36.50 ID = 01826d5d4817172 I = _ TF = (CM ) TF = (R Compagno_1977);
 
@@ -1247,7 +1204,7 @@ BEGIN NOTES;
 
 	AN T = 25  A = 0 DC = 2026.1.18.17.17.31 DM = 2026.1.18.17.17.54 ID = 019bd3d41a94295 I = _ TF = (CM ) TF = (R De_Carvalho_and_Maisey_1996_);
 
-	AN T = 28  A = 0 DC = 2026.1.19.10.6.49 DM = 2026.1.19.10.6.58 ID = 019bd77022d0307 I = _ TF = (CM ) TF = (R Aschliman_2012_unless_otherwise_stated_);
+	AN T = 29  A = 0 DC = 2026.1.19.10.6.49 DM = 2026.1.19.10.6.58 ID = 019bd77022d0307 I = _ TF = (CM ) TF = (R Aschliman_2012_unless_otherwise_stated_);
 
 	AN C = 2  A = 0 DC = 2022.11.24.11.37.23 DM = 2026.2.28.8.12.53 ID = 0184aa80439b1981 I = _ TF = (CM '0 basal in all chondrichthyans ^n1 synapmoprphy for euselachians ') TF = (R Villalobos_Segura_et_al_2022);
 
@@ -1533,7 +1490,7 @@ BEGIN NOTES;
 
 	AN T = 1 C = 4  A = 0 DC = 2026.3.29.21.14.35 DM = 2026.3.29.21.14.39 ID = 019d3cf35f71548 I = _ TF = (CM ) TF = (R shirai_1996);
 
-	AN T = 6 C = 4  A = 0 DC = 2026.3.29.21.14.43 DM = 2026.3.29.21.14.46 ID = 019d3cf37d9a549 I = _ TF = (CM ) TF = (R shirai_1996);
+	AN T = 7 C = 4  A = 0 DC = 2026.3.29.21.14.43 DM = 2026.3.29.21.14.46 ID = 019d3cf37d9a549 I = _ TF = (CM ) TF = (R shirai_1996);
 
 	AN T = 25 C = 4  A = 0 DC = 2026.3.29.21.15.15 DM = 2026.3.29.21.15.20 ID = 019d3cf3fa8a550 I = _ TF = (CM ) TF = (R shirai_1996);
 
@@ -1541,23 +1498,23 @@ BEGIN NOTES;
 
 	AN T = 4 C = 12  A = 0 DC = 2026.3.31.8.2.46 DM = 2026.3.31.8.2.49 ID = 019d446b28d1389 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 6 C = 12  A = 0 DC = 2026.3.31.8.3.4 DM = 2026.3.31.8.3.7 ID = 019d446b6f1b391 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 7 C = 12  A = 0 DC = 2026.3.31.8.3.4 DM = 2026.3.31.8.3.7 ID = 019d446b6f1b391 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 12  A = 0 DC = 2026.3.31.8.5.2 DM = 2026.3.31.8.5.4 ID = 019d446d39f0401 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 12  A = 0 DC = 2026.3.31.8.5.2 DM = 2026.3.31.8.5.4 ID = 019d446d39f0401 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 12  A = 0 DC = 2026.3.31.7.54.37 DM = 2026.3.31.7.54.39 ID = 019d4463b089377 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 12  A = 0 DC = 2026.3.31.7.54.37 DM = 2026.3.31.7.54.39 ID = 019d4463b089377 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 12  A = 0 DC = 2026.3.31.8.3.38 DM = 2026.3.31.8.3.41 ID = 019d446bf1df394 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 12  A = 0 DC = 2026.3.31.8.3.38 DM = 2026.3.31.8.3.41 ID = 019d446bf1df394 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 12  A = 0 DC = 2026.3.31.8.4.31 DM = 2026.3.31.8.4.34 ID = 019d446cc3cf398 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 12  A = 0 DC = 2026.3.31.8.4.31 DM = 2026.3.31.8.4.34 ID = 019d446cc3cf398 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 12  A = 0 DC = 2026.3.31.8.2.36 DM = 2026.3.31.8.2.39 ID = 019d446b01f4388 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 12  A = 0 DC = 2026.3.31.8.2.36 DM = 2026.3.31.8.2.39 ID = 019d446b01f4388 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 25 C = 12  A = 0 DC = 2026.3.31.8.5.19 DM = 2026.3.31.8.5.22 ID = 019d446d7f75402 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 12  A = 0 DC = 2026.3.31.7.54.48 DM = 2026.3.31.7.54.52 ID = 019d4463ddf8378 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 12  A = 0 DC = 2026.3.31.7.54.48 DM = 2026.3.31.7.54.52 ID = 019d4463ddf8378 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 12  A = 0 DC = 2026.3.31.7.54.55 DM = 2026.3.31.7.54.58 ID = 019d4463f951379 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 12  A = 0 DC = 2026.3.31.7.54.55 DM = 2026.3.31.7.54.58 ID = 019d4463f951379 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 1 C = 26  A = 0 DC = 2026.3.31.7.46.50 DM = 2026.3.31.7.46.53 ID = 019d445c91cb366 I = _ TF = (CM ) TF = (R Shirai_1996);
 
@@ -1565,33 +1522,33 @@ BEGIN NOTES;
 
 	AN T = 4 C = 26  A = 0 DC = 2026.3.31.7.47.10 DM = 2026.3.31.7.47.13 ID = 019d445cdfc7368 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 6 C = 26  A = 0 DC = 2026.3.31.7.46.45 DM = 2026.3.31.7.46.47 ID = 019d445c7c1d365 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 7 C = 26  A = 0 DC = 2026.3.31.7.46.45 DM = 2026.3.31.7.46.47 ID = 019d445c7c1d365 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 26  A = 0 DC = 2026.3.31.7.36.12 DM = 2026.3.31.7.36.15 ID = 019d4452d70e356 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 26  A = 0 DC = 2026.3.31.7.36.12 DM = 2026.3.31.7.36.15 ID = 019d4452d70e356 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 26  A = 0 DC = 2026.3.31.7.48.47 DM = 2026.3.31.7.48.49 ID = 019d445e58ce375 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 26  A = 0 DC = 2026.3.31.7.48.47 DM = 2026.3.31.7.48.49 ID = 019d445e58ce375 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 26  A = 0 DC = 2026.3.31.7.46.32 DM = 2026.3.31.7.46.35 ID = 019d445c4c46364 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 26  A = 0 DC = 2026.3.31.7.46.32 DM = 2026.3.31.7.46.35 ID = 019d445c4c46364 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 26  A = 0 DC = 2026.3.31.7.45.17 DM = 2026.3.31.7.45.25 ID = 019d445b2620358 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 26  A = 0 DC = 2026.3.31.7.45.17 DM = 2026.3.31.7.45.25 ID = 019d445b2620358 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 26  A = 0 DC = 2026.3.31.7.47.1 DM = 2026.3.31.7.47.5 ID = 019d445cbd71367 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 26  A = 0 DC = 2026.3.31.7.47.1 DM = 2026.3.31.7.47.5 ID = 019d445cbd71367 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 26  A = 0 DC = 2026.3.31.7.48.17 DM = 2026.3.31.7.48.20 ID = 019d445de651372 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 26  A = 0 DC = 2026.3.31.7.48.17 DM = 2026.3.31.7.48.20 ID = 019d445de651372 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 26  A = 0 DC = 2026.3.31.7.48.23 DM = 2026.3.31.7.48.26 ID = 019d445dfcb6373 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 26  A = 0 DC = 2026.3.31.7.48.23 DM = 2026.3.31.7.48.26 ID = 019d445dfcb6373 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 27  A = 0 DC = 2026.3.1.18.59.20 DM = 2026.3.1.18.59.26 ID = 019cac7c6960336 I = _ TF = (CM ) TF = (R nishida_1990_);
+	AN T = 29 C = 27  A = 0 DC = 2026.3.1.18.59.20 DM = 2026.3.1.18.59.26 ID = 019cac7c6960336 I = _ TF = (CM ) TF = (R nishida_1990_);
 
-	AN T = 28 C = 28  A = 0 DC = 2026.3.1.18.59.29 DM = 2026.3.1.18.59.33 ID = 019cac7c8e12337 I = _ TF = (CM ) TF = (R nishida_1990_);
+	AN T = 29 C = 28  A = 0 DC = 2026.3.1.18.59.29 DM = 2026.3.1.18.59.33 ID = 019cac7c8e12337 I = _ TF = (CM ) TF = (R nishida_1990_);
 
 	AN T = 3 C = 29  A = 0 DC = 2026.3.1.20.38.49 DM = 2026.3.1.20.39.29 ID = 019cacd77f25338 I = _ TF = (CM 'indepdent loss of the supraorbital crest in cimaeroids (McEachran 2004) ') ;
 
-	AN T = 19 C = 29  A = 0 DC = 2022.6.21.16.3.59 DM = 2022.6.21.16.4.4 ID = 01818693c2af62 I = _ TF = (CM ) TF = (R 'Shirai, 1996');
+	AN T = 20 C = 29  A = 0 DC = 2022.6.21.16.3.59 DM = 2022.6.21.16.4.4 ID = 01818693c2af62 I = _ TF = (CM ) TF = (R 'Shirai, 1996');
 
-	AN T = 8 C = 30  A = 0 DC = 2022.7.27.11.50.33 DM = 2022.7.27.11.50.40 ID = 01823f10adb9151 I = _ TF = (CM ) TF = (R 'Maisey, 2004');
+	AN T = 9 C = 30  A = 0 DC = 2022.7.27.11.50.33 DM = 2022.7.27.11.50.40 ID = 01823f10adb9151 I = _ TF = (CM ) TF = (R 'Maisey, 2004');
 
-	AN T = 15 C = 30  A = 0 DC = 2022.7.27.11.50.14 DM = 2022.7.27.11.50.21 ID = 01823f1063ae150 I = _ TF = (CM ) TF = (R 'Maisey, 2004');
+	AN T = 16 C = 30  A = 0 DC = 2022.7.27.11.50.14 DM = 2022.7.27.11.50.21 ID = 01823f1063ae150 I = _ TF = (CM ) TF = (R 'Maisey, 2004');
 
 	AN T = 23 C = 30  A = 0 DC = 2026.3.1.21.36.3 DM = 2026.3.1.21.36.16 ID = 019cad0be356341 I = _ TF = (CM ) TF = (R 'lost in pristids (nichida 1990) ');
 
@@ -1605,241 +1562,239 @@ BEGIN NOTES;
 
 	AN T = 4 C = 39  A = 0 DC = 2026.3.31.8.22.5 DM = 2026.3.31.8.22.8 ID = 019d447cd611430 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 6 C = 39  A = 0 DC = 2026.3.31.8.22.22 DM = 2026.3.31.8.22.25 ID = 019d447d1b04432 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 7 C = 39  A = 0 DC = 2026.3.31.8.22.22 DM = 2026.3.31.8.22.25 ID = 019d447d1b04432 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 39  A = 0 DC = 2026.3.31.8.17.38 DM = 2026.3.31.8.17.41 ID = 019d4478c4f0408 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 39  A = 0 DC = 2026.3.31.8.17.38 DM = 2026.3.31.8.17.41 ID = 019d4478c4f0408 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 39  A = 0 DC = 2026.3.31.8.28.39 DM = 2026.3.31.8.28.42 ID = 019d4482da8f450 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 39  A = 0 DC = 2026.3.31.8.28.39 DM = 2026.3.31.8.28.42 ID = 019d4482da8f450 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 39  A = 0 DC = 2026.3.31.8.21.18 DM = 2026.3.31.8.21.20 ID = 019d447c1efc426 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 39  A = 0 DC = 2026.3.31.8.21.18 DM = 2026.3.31.8.21.20 ID = 019d447c1efc426 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 39  A = 0 DC = 2026.3.31.8.18.58 DM = 2026.3.31.8.19.0 ID = 019d4479fc09414 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 39  A = 0 DC = 2026.3.31.8.18.58 DM = 2026.3.31.8.19.0 ID = 019d4479fc09414 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 39  A = 0 DC = 2026.3.31.8.21.54 DM = 2026.3.31.8.21.56 ID = 019d447cab94428 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 39  A = 0 DC = 2026.3.31.8.21.54 DM = 2026.3.31.8.21.56 ID = 019d447cab94428 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 39  A = 0 DC = 2026.3.31.8.24.37 DM = 2026.3.31.8.24.40 ID = 019d447f2aaf444 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 39  A = 0 DC = 2026.3.31.8.24.37 DM = 2026.3.31.8.24.40 ID = 019d447f2aaf444 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 39  A = 0 DC = 2026.3.31.8.24.54 DM = 2026.3.31.8.24.56 ID = 019d447f6974446 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 39  A = 0 DC = 2026.3.31.8.24.54 DM = 2026.3.31.8.24.56 ID = 019d447f6974446 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 1 C = 40  A = 0 DC = 2026.3.31.8.22.33 DM = 2026.3.31.8.22.36 ID = 019d447d430f434 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 4 C = 40  A = 0 DC = 2026.3.31.8.22.12 DM = 2026.3.31.8.22.15 ID = 019d447cf126431 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 6 C = 40  A = 0 DC = 2026.3.31.8.22.27 DM = 2026.3.31.8.22.30 ID = 019d447d2ee7433 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 7 C = 40  A = 0 DC = 2026.3.31.8.22.27 DM = 2026.3.31.8.22.30 ID = 019d447d2ee7433 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 40  A = 0 DC = 2026.3.31.8.17.44 DM = 2026.3.31.8.17.46 ID = 019d4478dbe1409 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 40  A = 0 DC = 2026.3.31.8.17.44 DM = 2026.3.31.8.17.46 ID = 019d4478dbe1409 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 40  A = 0 DC = 2026.3.31.8.28.46 DM = 2026.3.31.8.28.49 ID = 019d4482f574451 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 40  A = 0 DC = 2026.3.31.8.28.46 DM = 2026.3.31.8.28.49 ID = 019d4482f574451 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 40  A = 0 DC = 2026.3.31.8.21.24 DM = 2026.3.31.8.21.26 ID = 019d447c3582427 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 40  A = 0 DC = 2026.3.31.8.21.24 DM = 2026.3.31.8.21.26 ID = 019d447c3582427 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 40  A = 0 DC = 2026.3.31.8.19.5 DM = 2026.3.31.8.19.8 ID = 019d447a17a0415 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 40  A = 0 DC = 2026.3.31.8.19.5 DM = 2026.3.31.8.19.8 ID = 019d447a17a0415 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 40  A = 0 DC = 2026.3.31.8.21.59 DM = 2026.3.31.8.22.2 ID = 019d447cbf77429 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 40  A = 0 DC = 2026.3.31.8.21.59 DM = 2026.3.31.8.22.2 ID = 019d447cbf77429 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 40  A = 0 DC = 2026.3.31.8.24.43 DM = 2026.3.31.8.24.46 ID = 019d447f4127445 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 40  A = 0 DC = 2026.3.31.8.24.43 DM = 2026.3.31.8.24.46 ID = 019d447f4127445 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 40  A = 0 DC = 2026.3.31.8.24.59 DM = 2026.3.31.8.25.2 ID = 019d447f7df9447 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 40  A = 0 DC = 2026.3.31.8.24.59 DM = 2026.3.31.8.25.2 ID = 019d447f7df9447 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 1 C = 57  A = 0 DC = 2026.3.31.9.11.55 DM = 2026.3.31.9.11.58 ID = 019d44aa77a3520 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 4 C = 57  A = 0 DC = 2026.3.31.9.12.33 DM = 2026.3.31.9.12.36 ID = 019d44ab0c1e523 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 57  A = 0 DC = 2026.3.31.9.8.38 DM = 2026.3.31.9.8.42 ID = 019d44a77618497 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 57  A = 0 DC = 2026.3.31.9.8.38 DM = 2026.3.31.9.8.42 ID = 019d44a77618497 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 57  A = 0 DC = 2026.3.31.9.17.46 DM = 2026.3.31.9.17.49 ID = 019d44afd1ed534 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 57  A = 0 DC = 2026.3.31.9.17.46 DM = 2026.3.31.9.17.49 ID = 019d44afd1ed534 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 57  A = 0 DC = 2026.3.31.9.11.38 DM = 2026.3.31.9.11.41 ID = 019d44aa34b4518 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 57  A = 0 DC = 2026.3.31.9.11.38 DM = 2026.3.31.9.11.41 ID = 019d44aa34b4518 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 57  A = 0 DC = 2026.3.31.9.8.57 DM = 2026.3.31.9.8.59 ID = 019d44a7bfb5500 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 57  A = 0 DC = 2026.3.31.9.8.57 DM = 2026.3.31.9.8.59 ID = 019d44a7bfb5500 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 57  A = 0 DC = 2026.3.31.9.12.27 DM = 2026.3.31.9.12.29 ID = 019d44aaf243522 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 57  A = 0 DC = 2026.3.31.9.12.27 DM = 2026.3.31.9.12.29 ID = 019d44aaf243522 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 24 C = 57  A = 0 DC = 2026.3.31.9.18.15 DM = 2026.3.31.9.18.18 ID = 019d44b04276539 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 25 C = 57  A = 0 DC = 2026.3.31.9.6.55 DM = 2026.3.31.9.6.58 ID = 019d44a5e153494 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 57  A = 0 DC = 2026.3.31.9.18.20 DM = 2026.3.31.9.18.23 ID = 019d44b057ef540 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 57  A = 0 DC = 2026.3.31.9.18.20 DM = 2026.3.31.9.18.23 ID = 019d44b057ef540 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 57  A = 0 DC = 2026.3.31.9.17.33 DM = 2026.3.31.9.17.36 ID = 019d44af9fe9532 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 57  A = 0 DC = 2026.3.31.9.17.33 DM = 2026.3.31.9.17.36 ID = 019d44af9fe9532 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 58  A = 0 DC = 2026.1.18.19.21.48 DM = 2026.1.18.19.23.29 ID = 019bd445e2c3304 I = _ TF = (CM ) TF = (R 'Ramsey and Wilga 2007^n');
+	AN T = 8 C = 58  A = 0 DC = 2026.1.18.19.21.48 DM = 2026.1.18.19.23.29 ID = 019bd445e2c3304 I = _ TF = (CM ) TF = (R 'Ramsey and Wilga 2007^n');
 
 	AN T = 1 C = 63  A = 0 DC = 2026.3.31.9.12.2 DM = 2026.3.31.9.12.5 ID = 019d44aa93e5521 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 4 C = 63  A = 0 DC = 2026.3.31.9.12.43 DM = 2026.3.31.9.12.47 ID = 019d44ab3396525 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 63  A = 0 DC = 2026.3.31.9.9.55 DM = 2026.3.31.9.9.57 ID = 019d44a8a06c507 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 63  A = 0 DC = 2026.3.31.9.9.55 DM = 2026.3.31.9.9.57 ID = 019d44a8a06c507 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 63  A = 0 DC = 2026.3.31.9.18.10 DM = 2026.3.31.9.18.12 ID = 019d44b02e0d538 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 63  A = 0 DC = 2026.3.31.9.18.10 DM = 2026.3.31.9.18.12 ID = 019d44b02e0d538 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 63  A = 0 DC = 2026.3.31.9.11.44 DM = 2026.3.31.9.11.47 ID = 019d44aa4c05519 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 63  A = 0 DC = 2026.3.31.9.11.44 DM = 2026.3.31.9.11.47 ID = 019d44aa4c05519 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 63  A = 0 DC = 2026.3.31.9.10.19 DM = 2026.3.31.9.10.21 ID = 019d44a8fe08510 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 63  A = 0 DC = 2026.3.31.9.10.19 DM = 2026.3.31.9.10.21 ID = 019d44a8fe08510 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 63  A = 0 DC = 2026.3.31.9.12.38 DM = 2026.3.31.9.12.41 ID = 019d44ab1edd524 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 63  A = 0 DC = 2026.3.31.9.12.38 DM = 2026.3.31.9.12.41 ID = 019d44ab1edd524 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 25 C = 63  A = 0 DC = 2026.3.31.9.7.6 DM = 2026.3.31.9.7.9 ID = 019d44a60e6e495 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 63  A = 0 DC = 2026.3.31.9.17.59 DM = 2026.3.31.9.18.2 ID = 019d44b005c6536 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 63  A = 0 DC = 2026.3.31.9.17.59 DM = 2026.3.31.9.18.2 ID = 019d44b005c6536 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 63  A = 0 DC = 2026.3.31.9.17.53 DM = 2026.3.31.9.17.55 ID = 019d44afec67535 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 63  A = 0 DC = 2026.3.31.9.17.53 DM = 2026.3.31.9.17.55 ID = 019d44afec67535 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 19 C = 66  A = 0 DC = 2022.7.21.13.37.46 DM = 2022.7.21.13.38.42 ID = 0182208cac12128 I = _ TF = (CM 'We don''t have direct evidence for this state, but the neurocranium and jaw articulation is the same in all hexanchiforms and thus it seems safe to assume that this is also the case in Notorynchus.') ;
+	AN T = 20 C = 66  A = 0 DC = 2022.7.21.13.37.46 DM = 2022.7.21.13.38.42 ID = 0182208cac12128 I = _ TF = (CM 'We don''t have direct evidence for this state, but the neurocranium and jaw articulation is the same in all hexanchiforms and thus it seems safe to assume that this is also the case in Notorynchus.') ;
 
 	AN T = 4 C = 78  A = 0 DC = 2026.3.31.9.57.10 DM = 2026.3.31.9.57.13 ID = 019d44d3e272653 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 78  A = 0 DC = 2026.3.31.9.50.40 DM = 2026.3.31.9.50.42 ID = 019d44cdf01b616 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 78  A = 0 DC = 2026.3.31.9.50.40 DM = 2026.3.31.9.50.42 ID = 019d44cdf01b616 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 78  A = 0 DC = 2026.3.31.9.59.1 DM = 2026.3.31.9.59.3 ID = 019d44d59618664 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 78  A = 0 DC = 2026.3.31.9.59.1 DM = 2026.3.31.9.59.3 ID = 019d44d59618664 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 78  A = 0 DC = 2026.3.31.9.55.27 DM = 2026.3.31.9.55.30 ID = 019d44d2530e642 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 78  A = 0 DC = 2026.3.31.9.55.27 DM = 2026.3.31.9.55.30 ID = 019d44d2530e642 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 78  A = 0 DC = 2026.3.31.9.52.19 DM = 2026.3.31.9.52.22 ID = 019d44cf723b626 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 78  A = 0 DC = 2026.3.31.9.52.19 DM = 2026.3.31.9.52.22 ID = 019d44cf723b626 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 78  A = 0 DC = 2026.3.31.9.56.53 DM = 2026.3.31.9.56.57 ID = 019d44d3a250651 I = _ TF = (CM ) TF = (R 'Shirai 1996	');
+	AN T = 21 C = 78  A = 0 DC = 2026.3.31.9.56.53 DM = 2026.3.31.9.56.57 ID = 019d44d3a250651 I = _ TF = (CM ) TF = (R 'Shirai 1996	');
 
 	AN T = 25 C = 78  A = 0 DC = 2026.3.31.9.48.43 DM = 2026.3.31.9.48.46 ID = 019d44cc291e609 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 78  A = 0 DC = 2026.3.31.9.58.1 DM = 2026.3.31.9.58.3 ID = 019d44d4ab6e655 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 78  A = 0 DC = 2026.3.31.9.58.1 DM = 2026.3.31.9.58.3 ID = 019d44d4ab6e655 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 78  A = 0 DC = 2026.3.31.9.58.7 DM = 2026.3.31.9.58.10 ID = 019d44d4c231656 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 78  A = 0 DC = 2026.3.31.9.58.7 DM = 2026.3.31.9.58.10 ID = 019d44d4c231656 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 4 C = 79  A = 0 DC = 2026.3.31.9.57.15 DM = 2026.3.31.9.57.18 ID = 019d44d3f95f654 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 79  A = 0 DC = 2026.3.31.9.50.44 DM = 2026.3.31.9.50.47 ID = 019d44ce0200617 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 79  A = 0 DC = 2026.3.31.9.50.44 DM = 2026.3.31.9.50.47 ID = 019d44ce0200617 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 79  A = 0 DC = 2026.3.31.9.59.6 DM = 2026.3.31.9.59.8 ID = 019d44d5a824665 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 79  A = 0 DC = 2026.3.31.9.59.6 DM = 2026.3.31.9.59.8 ID = 019d44d5a824665 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 79  A = 0 DC = 2026.3.31.9.55.16 DM = 2026.3.31.9.55.23 ID = 019d44d225cf641 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 79  A = 0 DC = 2026.3.31.9.55.16 DM = 2026.3.31.9.55.23 ID = 019d44d225cf641 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 79  A = 0 DC = 2026.3.31.9.52.25 DM = 2026.3.31.9.52.28 ID = 019d44cf8c2b627 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 79  A = 0 DC = 2026.3.31.9.52.25 DM = 2026.3.31.9.52.28 ID = 019d44cf8c2b627 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 79  A = 0 DC = 2026.3.31.9.57.4 DM = 2026.3.31.9.57.6 ID = 019d44d3cbce652 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 79  A = 0 DC = 2026.3.31.9.57.4 DM = 2026.3.31.9.57.6 ID = 019d44d3cbce652 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 25 C = 79  A = 0 DC = 2026.3.31.9.48.51 DM = 2026.3.31.9.48.53 ID = 019d44cc47f7610 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 79  A = 0 DC = 2026.3.31.9.58.13 DM = 2026.3.31.9.58.15 ID = 019d44d4da89657 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 79  A = 0 DC = 2026.3.31.9.58.13 DM = 2026.3.31.9.58.15 ID = 019d44d4da89657 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 79  A = 0 DC = 2026.3.31.9.58.17 DM = 2026.3.31.9.58.20 ID = 019d44d4ead0658 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 79  A = 0 DC = 2026.3.31.9.58.17 DM = 2026.3.31.9.58.20 ID = 019d44d4ead0658 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 1 C = 80  A = 0 DC = 2026.3.31.9.39.20 DM = 2026.3.31.9.39.23 ID = 019d44c390d6593 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 4 C = 80  A = 0 DC = 2026.3.31.9.39.36 DM = 2026.3.31.9.39.39 ID = 019d44c3d033596 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 6 C = 80  A = 0 DC = 2026.3.31.9.39.25 DM = 2026.3.31.9.39.27 ID = 019d44c3a49f594 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 7 C = 80  A = 0 DC = 2026.3.31.9.39.25 DM = 2026.3.31.9.39.27 ID = 019d44c3a49f594 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 80  A = 0 DC = 2026.3.31.9.35.44 DM = 2026.3.31.9.35.44 ID = 019d44c045f6579 I = _ TF = (CM ) ;
+	AN T = 8 C = 80  A = 0 DC = 2026.3.31.9.35.44 DM = 2026.3.31.9.35.44 ID = 019d44c045f6579 I = _ TF = (CM ) ;
 
-	AN T = 7 C = 80  A = 0 DC = 2026.3.31.9.35.44 DM = 2026.3.31.9.35.47 ID = 019d44c046b4580 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 80  A = 0 DC = 2026.3.31.9.35.44 DM = 2026.3.31.9.35.47 ID = 019d44c046b4580 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 80  A = 0 DC = 2026.3.31.9.27.22 DM = 2026.3.31.9.27.25 ID = 019d44b89ab1573 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 80  A = 0 DC = 2026.3.31.9.27.22 DM = 2026.3.31.9.27.25 ID = 019d44b89ab1573 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 80  A = 0 DC = 2026.3.31.9.39.15 DM = 2026.3.31.9.39.17 ID = 019d44c37b58592 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 80  A = 0 DC = 2026.3.31.9.39.15 DM = 2026.3.31.9.39.17 ID = 019d44c37b58592 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 80  A = 0 DC = 2026.3.31.9.36.2 DM = 2026.3.31.9.36.4 ID = 019d44c08b0f583 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 80  A = 0 DC = 2026.3.31.9.36.2 DM = 2026.3.31.9.36.4 ID = 019d44c08b0f583 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 80  A = 0 DC = 2026.3.31.9.39.31 DM = 2026.3.31.9.39.34 ID = 019d44c3bb67595 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 80  A = 0 DC = 2026.3.31.9.39.31 DM = 2026.3.31.9.39.34 ID = 019d44c3bb67595 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 25 C = 80  A = 0 DC = 2026.3.31.9.28.56 DM = 2026.3.31.9.29.2 ID = 019d44ba0b99575 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 80  A = 0 DC = 2026.3.31.9.27.6 DM = 2026.3.31.9.27.9 ID = 019d44b85da3570 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 80  A = 0 DC = 2026.3.31.9.27.6 DM = 2026.3.31.9.27.9 ID = 019d44b85da3570 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 80  A = 0 DC = 2026.3.31.9.27.11 DM = 2026.3.31.9.27.14 ID = 019d44b8706f571 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 80  A = 0 DC = 2026.3.31.9.27.11 DM = 2026.3.31.9.27.14 ID = 019d44b8706f571 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 1 C = 81  A = 0 DC = 2026.3.31.9.56.19 DM = 2026.3.31.9.56.21 ID = 019d44d31be3647 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 4 C = 81  A = 0 DC = 2026.3.31.9.56.37 DM = 2026.3.31.9.56.40 ID = 019d44d3620a650 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 6 C = 81  A = 0 DC = 2026.3.31.9.56.26 DM = 2026.3.31.9.56.28 ID = 019d44d33895648 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 7 C = 81  A = 0 DC = 2026.3.31.9.56.26 DM = 2026.3.31.9.56.28 ID = 019d44d33895648 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 81  A = 0 DC = 2026.3.31.9.50.56 DM = 2026.3.31.9.50.56 ID = 019d44ce2ee3618 I = _ TF = (CM ) ;
+	AN T = 8 C = 81  A = 0 DC = 2026.3.31.9.50.56 DM = 2026.3.31.9.50.56 ID = 019d44ce2ee3618 I = _ TF = (CM ) ;
 
-	AN T = 7 C = 81  A = 0 DC = 2026.3.31.9.50.56 DM = 2026.3.31.9.50.59 ID = 019d44ce2f70619 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 81  A = 0 DC = 2026.3.31.9.50.56 DM = 2026.3.31.9.50.59 ID = 019d44ce2f70619 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 81  A = 0 DC = 2026.3.31.9.59.11 DM = 2026.3.31.9.59.13 ID = 019d44d5bb3d666 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 81  A = 0 DC = 2026.3.31.9.59.11 DM = 2026.3.31.9.59.13 ID = 019d44d5bb3d666 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 81  A = 0 DC = 2026.3.31.9.56.13 DM = 2026.3.31.9.56.16 ID = 019d44d305dd646 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 81  A = 0 DC = 2026.3.31.9.56.13 DM = 2026.3.31.9.56.16 ID = 019d44d305dd646 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 81  A = 0 DC = 2026.3.31.9.52.45 DM = 2026.3.31.9.52.47 ID = 019d44cfd774630 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 81  A = 0 DC = 2026.3.31.9.52.45 DM = 2026.3.31.9.52.47 ID = 019d44cfd774630 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 81  A = 0 DC = 2026.3.31.9.56.32 DM = 2026.3.31.9.56.34 ID = 019d44d34eb3649 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 81  A = 0 DC = 2026.3.31.9.56.32 DM = 2026.3.31.9.56.34 ID = 019d44d34eb3649 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 25 C = 81  A = 0 DC = 2026.3.31.9.48.58 DM = 2026.3.31.9.49.1 ID = 019d44cc61ed611 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 81  A = 0 DC = 2026.3.31.9.58.23 DM = 2026.3.31.9.58.25 ID = 019d44d50017659 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 81  A = 0 DC = 2026.3.31.9.58.23 DM = 2026.3.31.9.58.25 ID = 019d44d50017659 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 81  A = 0 DC = 2026.3.31.9.58.27 DM = 2026.3.31.9.58.30 ID = 019d44d5124e660 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 81  A = 0 DC = 2026.3.31.9.58.27 DM = 2026.3.31.9.58.30 ID = 019d44d5124e660 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 1 C = 82  A = 0 DC = 2026.3.31.9.24.1 DM = 2026.3.31.9.24.3 ID = 019d44b589ce557 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 4 C = 82  A = 0 DC = 2026.3.31.9.24.31 DM = 2026.3.31.9.24.34 ID = 019d44b601b4560 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 6 C = 82  A = 0 DC = 2026.3.31.9.24.6 DM = 2026.3.31.9.24.8 ID = 019d44b59dc8558 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 7 C = 82  A = 0 DC = 2026.3.31.9.24.6 DM = 2026.3.31.9.24.8 ID = 019d44b59dc8558 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 82  A = 0 DC = 2026.3.31.9.21.57 DM = 2026.3.31.9.21.59 ID = 019d44b3a520546 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 82  A = 0 DC = 2026.3.31.9.21.57 DM = 2026.3.31.9.21.59 ID = 019d44b3a520546 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 82  A = 0 DC = 2026.3.31.9.26.5 DM = 2026.3.31.9.26.5 ID = 019d44b7704f568 I = _ TF = (CM ) ;
+	AN T = 10 C = 82  A = 0 DC = 2026.3.31.9.26.5 DM = 2026.3.31.9.26.5 ID = 019d44b7704f568 I = _ TF = (CM ) ;
 
-	AN T = 9 C = 82  A = 0 DC = 2026.3.31.9.26.5 DM = 2026.3.31.9.26.9 ID = 019d44b770c1569 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 82  A = 0 DC = 2026.3.31.9.26.5 DM = 2026.3.31.9.26.9 ID = 019d44b770c1569 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 82  A = 0 DC = 2026.3.31.9.23.33 DM = 2026.3.31.9.23.36 ID = 019d44b51d7b556 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 82  A = 0 DC = 2026.3.31.9.23.33 DM = 2026.3.31.9.23.36 ID = 019d44b51d7b556 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 18 C = 82  A = 0 DC = 2026.3.31.9.22.27 DM = 2026.3.31.9.22.30 ID = 019d44b41c18549 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 82  A = 0 DC = 2026.3.31.9.22.27 DM = 2026.3.31.9.22.30 ID = 019d44b41c18549 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 82  A = 0 DC = 2026.3.31.9.24.25 DM = 2026.3.31.9.24.28 ID = 019d44b5e8f4559 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 82  A = 0 DC = 2026.3.31.9.24.25 DM = 2026.3.31.9.24.28 ID = 019d44b5e8f4559 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 25 C = 82  A = 0 DC = 2026.3.31.9.20.1 DM = 2026.3.31.9.20.4 ID = 019d44b1e175544 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 28 C = 82  A = 0 DC = 2026.3.31.9.25.41 DM = 2026.3.31.9.25.44 ID = 019d44b71137565 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 82  A = 0 DC = 2026.3.31.9.25.41 DM = 2026.3.31.9.25.44 ID = 019d44b71137565 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 82  A = 0 DC = 2026.3.31.9.25.46 DM = 2026.3.31.9.25.49 ID = 019d44b726e1566 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 82  A = 0 DC = 2026.3.31.9.25.46 DM = 2026.3.31.9.25.49 ID = 019d44b726e1566 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 19 C = 91  A = 0 DC = 2022.7.13.15.19.57 DM = 2022.7.13.15.20.24 ID = 0181f7b75874109 I = _ TF = (CM ) TF = (R da_Silva_&_Datovo_2020);
+	AN T = 20 C = 91  A = 0 DC = 2022.7.13.15.19.57 DM = 2022.7.13.15.20.24 ID = 0181f7b75874109 I = _ TF = (CM ) TF = (R da_Silva_&_Datovo_2020);
 
-	AN T = 19 C = 98  A = 0 DC = 2022.7.13.15.43.47 DM = 2022.7.13.15.43.55 ID = 0181f7cd2a90112 I = _ TF = (CM ) TF = (R Lane_&_Maisey_2009);
+	AN T = 20 C = 98  A = 0 DC = 2022.7.13.15.43.47 DM = 2022.7.13.15.43.55 ID = 0181f7cd2a90112 I = _ TF = (CM ) TF = (R Lane_&_Maisey_2009);
 
-	AN T = 26 C = 112  A = 0 DC = 2022.9.12.20.39.49 DM = 2022.9.12.20.39.59 ID = 018333001dbe329 I = _ TF = (CM state_2_added) ;
+	AN T = 27 C = 112  A = 0 DC = 2022.9.12.20.39.49 DM = 2022.9.12.20.39.59 ID = 018333001dbe329 I = _ TF = (CM state_2_added) ;
 
 	AN T = 1 C = 140  A = 0 DC = 2026.3.31.8.57.30 DM = 2026.3.31.8.57.32 ID = 019d449d4259472 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 4 C = 140  A = 0 DC = 2026.3.31.8.57.1 DM = 2026.3.31.8.57.4 ID = 019d449cd2e7468 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 6 C = 140  A = 0 DC = 2026.3.31.8.57.35 DM = 2026.3.31.8.57.38 ID = 019d449d565f473 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 7 C = 140  A = 0 DC = 2026.3.31.8.57.35 DM = 2026.3.31.8.57.38 ID = 019d449d565f473 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 7 C = 140  A = 0 DC = 2026.3.31.8.58.52 DM = 2026.3.31.8.58.54 ID = 019d449e84b3481 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 8 C = 140  A = 0 DC = 2026.3.31.8.58.52 DM = 2026.3.31.8.58.54 ID = 019d449e84b3481 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 9 C = 140  A = 0 DC = 2026.3.31.8.55.46 DM = 2026.3.31.8.55.49 ID = 019d449bad23462 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 10 C = 140  A = 0 DC = 2026.3.31.8.55.46 DM = 2026.3.31.8.55.49 ID = 019d449bad23462 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 11 C = 140  A = 0 DC = 2026.3.31.8.57.22 DM = 2026.3.31.8.57.25 ID = 019d449d2305471 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 12 C = 140  A = 0 DC = 2026.3.31.8.57.22 DM = 2026.3.31.8.57.25 ID = 019d449d2305471 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 13 C = 140  A = 0 DC = 2022.7.26.18.22.48 DM = 2022.7.26.18.23.0 ID = 01823b516d18298 I = _ TF = (CM 'Shirai 1992, 1996, Carvalho 1996') ;
+	AN T = 14 C = 140  A = 0 DC = 2022.7.26.18.22.48 DM = 2022.7.26.18.23.0 ID = 01823b516d18298 I = _ TF = (CM 'Shirai 1992, 1996, Carvalho 1996') ;
 
-	AN T = 18 C = 140  A = 0 DC = 2026.3.31.8.58.18 DM = 2026.3.31.8.58.18 ID = 019d449dfef2476 I = _ TF = (CM ) ;
+	AN T = 19 C = 140  A = 0 DC = 2026.3.31.8.58.18 DM = 2026.3.31.8.58.18 ID = 019d449dfef2476 I = _ TF = (CM ) ;
 
-	AN T = 18 C = 140  A = 0 DC = 2026.3.31.8.58.18 DM = 2026.3.31.8.58.21 ID = 019d449dff60477 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 19 C = 140  A = 0 DC = 2026.3.31.8.58.18 DM = 2026.3.31.8.58.21 ID = 019d449dff60477 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 20 C = 140  A = 0 DC = 2026.3.31.8.56.56 DM = 2026.3.31.8.56.58 ID = 019d449cbe80467 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 21 C = 140  A = 0 DC = 2026.3.31.8.56.56 DM = 2026.3.31.8.56.58 ID = 019d449cbe80467 I = _ TF = (CM ) TF = (R Shirai_1996);
 
 	AN T = 25 C = 140  A = 0 DC = 2026.3.31.8.59.21 DM = 2026.3.31.8.59.21 ID = 019d449ef572484 I = _ TF = (CM ) ;
 
-	AN T = 28 C = 140  A = 0 DC = 2026.3.31.8.55.29 DM = 2026.3.31.8.55.32 ID = 019d449b6a54457 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 29 C = 140  A = 0 DC = 2026.3.31.8.55.29 DM = 2026.3.31.8.55.32 ID = 019d449b6a54457 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 29 C = 140  A = 0 DC = 2026.3.31.8.55.34 DM = 2026.3.31.8.55.34 ID = 019d449b80a5458 I = _ TF = (CM ) ;
+	AN T = 30 C = 140  A = 0 DC = 2026.3.31.8.55.34 DM = 2026.3.31.8.55.34 ID = 019d449b80a5458 I = _ TF = (CM ) ;
 
-	AN T = 29 C = 140  A = 0 DC = 2026.3.31.8.55.35 DM = 2026.3.31.8.55.38 ID = 019d449b812f459 I = _ TF = (CM ) TF = (R Shirai_1996);
+	AN T = 30 C = 140  A = 0 DC = 2026.3.31.8.55.35 DM = 2026.3.31.8.55.38 ID = 019d449b812f459 I = _ TF = (CM ) TF = (R Shirai_1996);
 
-	AN T = 19 C = 147  A = 0 DC = 2022.7.13.15.13.53 DM = 2022.7.13.15.13.59 ID = 0181f7b1ce46107 I = _ TF = (CM ) TF = (R Shirai_1992);
+	AN T = 20 C = 147  A = 0 DC = 2022.7.13.15.13.53 DM = 2022.7.13.15.13.59 ID = 0181f7b1ce46107 I = _ TF = (CM ) TF = (R Shirai_1992);
 
-	AN T = 14 C = 155  A = 0 DC = 2022.9.20.20.27.28 DM = 2022.9.20.20.27.44 ID = 01835c27b1fb384 I = _ TF = (CM ) TF = (R Shirai_1992_Pl_55_G);
+	AN T = 15 C = 155  A = 0 DC = 2022.9.20.20.27.28 DM = 2022.9.20.20.27.44 ID = 01835c27b1fb384 I = _ TF = (CM ) TF = (R Shirai_1992_Pl_55_G);
 
-	AN T = 22 C = 162  A = 0 DC = 2026.2.23.11.12.41 DM = 2026.2.23.11.12.49 ID = 019c8beb051a318 I = _ TF = (CM ) TF = (R #3_Claeson_2014_);
+	AN T = 13 C = 194  A = 0 DC = 2022.8.2.10.40.48 DM = 2022.8.2.10.40.57 ID = 01825db6fa1b154 I = _ TF = (CM ) TF = (R Herman_et_al._1992);
 
-	AN T = 12 C = 194  A = 0 DC = 2022.8.2.10.40.48 DM = 2022.8.2.10.40.57 ID = 01825db6fa1b154 I = _ TF = (CM ) TF = (R Herman_et_al._1992);
+	AN T = 13 C = 195  A = 0 DC = 2022.8.2.10.41.36 DM = 2022.8.2.10.41.41 ID = 01825db7b398157 I = _ TF = (CM ) TF = (R Herman_et_al._1992);
 
-	AN T = 12 C = 195  A = 0 DC = 2022.8.2.10.41.36 DM = 2022.8.2.10.41.41 ID = 01825db7b398157 I = _ TF = (CM ) TF = (R Herman_et_al._1992);
-
-	AN T = 12 C = 196  A = 0 DC = 2022.8.2.10.41.45 DM = 2022.8.2.10.41.50 ID = 01825db7d867158 I = _ TF = (CM ) TF = (R Herman_et_al._1992);
+	AN T = 13 C = 196  A = 0 DC = 2022.8.2.10.41.45 DM = 2022.8.2.10.41.50 ID = 01825db7d867158 I = _ TF = (CM ) TF = (R Herman_et_al._1992);
 
 	AN T = 25 C = 225  A = 0 DC = 2026.3.29.17.34.51 DM = 2026.3.29.17.35.1 ID = 019d3c2a32af349 I = _ TF = (CM ) TF = (R Flammensbeck_et_al_2018);
 
@@ -1857,122 +1812,84 @@ BEGIN SETS;
 
 END;
 
-BEGIN TREES[!'Mesquite version 4.01, build  (build 1092)^nZephyr version 4.01, build 201^n^nTrees acquired from IQ-TREE using Mesquite''s Zephyr package. ^nIQ-TREE [version 2.4.0] run on local computer ^n^nAnalysis started Fri Apr 03 10:41:38 PDT 2026^nResults stored in folder: C:\Swearingen_Thesis\Mesquite_thesis\IQ_TREE-2026.04.03-Run.1\^n^nMatrix: Character Matrix^nSearch details: ^n   Search for maximum-likelihood tree^n   1 search replicate^nIQ-TREE command options:  -s dataMatrix.nex -m MFP -spp setsBlock.nex -pre iqtreeAnalysis -nt AUTO '];
+BEGIN TREES[!'Mesquite version 4.01, build  (build 1092)^nZephyr version 4.01, build 201^n^nTrees acquired from IQ-TREE using Mesquite''s Zephyr package. ^nIQ-TREE [version 2.4.0] run on local computer ^n^nAnalysis started Fri Apr 03 10:41:38 PDT 2026^nResults stored in folder: C:\Swearingen_Thesis\Mesquite_thesis\IQ_TREE-2026.04.03-Run.1\^n^nMatrix: Character Matrix^nSearch details: ^n   Search for maximum-likelihood tree^n   1 search replicate^nIQ-TREE command options:  -s dataMatrix.nex -m MFP -spp setsBlock.nex -pre iqtreeAnalysis -nt AUT'];
 	Title 'IQ-TREE  Trees (Matrix: Character Matrix)';
 	ID 019d546f5c021;
 	LINK Taxa = Taxa2;
 	TRANSLATE
-[0] 		1 'Alopias_vulpinus',
-[1] 		2 'Beringraja_binoculata',
-[2] 		3 'Callorhinchus_milii',
-[3] 		4 'Carcarhias_taurus ',
-[4] 		5 Carcharhinus,
-[5] 		6 'Cetorhinus_maximus',
-[6] 		7 'Chiloscyllium_plagiosum',
-[7] 		8 'Chlamydoselachus_anguineus ',
-[8] 		9 'Fluvitrygon_signifer',
-[9] 		10 'Galeocerdo_cuvier',
-[10] 		11 'Galeorhinus_galeus',
-[11] 		12 'Ginglymostoma_cirratum',
-[12] 		13 'Heptranchias_perlo',
-[13] 		14 'Heterodontus_francisci',
-[14] 		15 Hexanchus,
-[15] 		16 'Isurus_oxyrinchus',
-[16] 		17 Mustelus,
-[17] 		18 'Negaprion_brevirostris',
-[18] 		19 'Notorynchus_cepedianus',
-[19] 		20 'Odontaspididae_noronhai',
-[20] 		21 'Parmaturus_xaniurus ',
-[21] 		22 'Platyrhinoidis_triseriata',
+[0] 		1 Alopias,
+[1] 		2 Beringraja,
+[2] 		3 Callorhinchus,
+[3] 		4 Carcharias,
+[4] 		5 'Carcharhinus_l',
+[5] 		6 'Carcharhinus_a',
+[6] 		7 Cetorhinus,
+[7] 		8 Chiloscyllium,
+[8] 		9 Chlamydoselachus,
+[9] 		10 Fluvitrygon,
+[10] 		11 Galeocerdo,
+[11] 		12 Galeorhinus,
+[12] 		13 Ginglymostoma,
+[13] 		14 Heptranchias,
+[14] 		15 Heterodontus,
+[15] 		16 Hexnachus,
+[16] 		17 Isurus,
+[17] 		18 Mustelus,
+[18] 		19 Negaprion,
+[19] 		20 Notorynchus,
+[20] 		21 Odontaspis,
+[21] 		22 Parmaturus,
 [22] 		23 Pristis,
-[23] 		24 'Pteroplatytrygon_violacea',
-[24] 		25 'Somnsiosus_microcelaphus',
-[25] 		26 Sphyrna,
-[26] 		27 'Stegostoma_trigrinum',
-[27] 		28 Taeniura,
-[28] 		29 'Telatrygon_zugei',
-[29] 		30 Urolophus;
-	TREE 'IQ-TREE Tree+' = (1:0.00000065755,((6:0.0000013151,(11:0.0000013151,((10:0.0,27:0.0):0.0000013151,(21:0.0000013151,(3:0.3308500309,(26:0.0000014518,(20:0.0,(4:0.0,18:0.0):0.0):0.0000013151):0.0001707863):0.0061844838):0.0000023065):0.0000021173):0.0000017227):0.0000012639,(5:0.0000020814,(17:0.0585847097,(16:0.0956365938,((7:0.0000022369,12:0.0459789627):0.0000023042,(14:0.0452845096,((25:0.1748434705,(8:0.0215247468,(19:0.0000013151,(13:0.010902243,15:0.0126975439):0.0130370774):0.1320011638):0.0735737068):0.0439973878,((23:0.0879110862,(2:0.0000013151,22:0.000002721):0.0347404303):0.0255843212,(9:0.0224257598,(30:0.0000013151,(29:0.0000013151,(24:0.0441911807,28:0.0000013151):0.0000023514):0.0209214237):0.0000028895):0.3750456026):0.233183159):0.0346912225):0.0385534037):0.0426275616):0.0372472885):0.0633284305):0.0000011751):0.00000065755);
+[23] 		24 Pteroplatytrygon,
+[24] 		25 Somnsiosus,
+[25] 		26 'Sphyrna_z',
+[26] 		27 'Sphyrna_ti',
+[27] 		28 Stegostoma,
+[28] 		29 Taeniura,
+[29] 		30 Telatrygon,
+[30] 		31 Urolophus;
+	TREE 'IQ-TREE Tree+' = (1:0.00000065755,((7:0.0000013151,(12:0.0000013151,((11:0.0,28:0.0):0.0000013151,(22:0.0000013151,(3:0.3308500309,(27:0.0000014518,(21:0.0,(4:0.0,19:0.0):0.0):0.0000013151):0.0001707863):0.0061844838):0.0000023065):0.0000021173):0.0000017227):0.0000012639,(6:0.0000020814,(18:0.0585847097,(17:0.0956365938,((8:0.0000022369,13:0.0459789627):0.0000023042,(15:0.0452845096,((25:0.1748434705,(9:0.0215247468,(20:0.0000013151,(14:0.010902243,16:0.0126975439):0.0130370774):0.1320011638):0.0735737068):0.0439973878,((23:0.0879110862,2:0.0347417454):0.0255843212,(10:0.0224257598,(31:0.0000013151,(30:0.0000013151,(24:0.0441911807,29:0.0000013151):0.0000023514):0.0209214237):0.0000028895):0.3750456026):0.233183159):0.0346912225):0.0385534037):0.0426275616):0.0372472885):0.0633284305):0.0000011751):0.00000065755);
 
 END;
 
 
-BEGIN TREES[!'Mesquite version 4.01, build  (build 1092)^nZephyr version 4.01, build 201^n^nTrees acquired from IQ-TREE using Mesquite''s Zephyr package. ^nIQ-TREE [version 2.4.0] run on local computer ^n^nAnalysis started Fri Apr 03 23:29:00 PDT 2026^nResults stored in folder: C:\Swearingen_Thesis\Mesquite_thesis\IQ_TREE-2026.04.03-Run.2\^n^nMatrix: Character Matrix^nSearch details: ^n   Search for maximum-likelihood tree^n   1 search replicate^nIQ-TREE command options:  -s dataMatrix.nex -m MFP -spp setsBlock.nex -pre iqtreeAnalysis -nt AUTO '];
+BEGIN TREES[!'Mesquite version 4.01, build  (build 1092)^nZephyr version 4.01, build 201^n^nTrees acquired from IQ-TREE using Mesquite''s Zephyr package. ^nIQ-TREE [version 2.4.0] run on local computer ^n^nAnalysis started Fri Apr 03 23:29:00 PDT 2026^nResults stored in folder: C:\Swearingen_Thesis\Mesquite_thesis\IQ_TREE-2026.04.03-Run.2\^n^nMatrix: Character Matrix^nSearch details: ^n   Search for maximum-likelihood tree^n   1 search replicate^nIQ-TREE command options:  -s dataMatrix.nex -m MFP -spp setsBlock.nex -pre iqtreeAnalysis -nt AUT'];
 	Title 'IQ-TREE  Trees (Matrix: Character Matrix).2';
 	ID 019d572e232721;
 	LINK Taxa = Taxa2;
 	TRANSLATE
-[0] 		1 'Alopias_vulpinus',
-[1] 		2 'Beringraja_binoculata',
-[2] 		3 'Callorhinchus_milii',
-[3] 		4 'Carcarhias_taurus ',
-[4] 		5 Carcharhinus,
-[5] 		6 'Cetorhinus_maximus',
-[6] 		7 'Chiloscyllium_plagiosum',
-[7] 		8 'Chlamydoselachus_anguineus ',
-[8] 		9 'Fluvitrygon_signifer',
-[9] 		10 'Galeocerdo_cuvier',
-[10] 		11 'Galeorhinus_galeus',
-[11] 		12 'Ginglymostoma_cirratum',
-[12] 		13 'Heptranchias_perlo',
-[13] 		14 'Heterodontus_francisci',
-[14] 		15 Hexanchus,
-[15] 		16 'Isurus_oxyrinchus',
-[16] 		17 Mustelus,
-[17] 		18 'Negaprion_brevirostris',
-[18] 		19 'Notorynchus_cepedianus',
-[19] 		20 'Odontaspididae_noronhai',
-[20] 		21 'Parmaturus_xaniurus ',
-[21] 		22 'Platyrhinoidis_triseriata',
+[0] 		1 Alopias,
+[1] 		2 Beringraja,
+[2] 		3 Callorhinchus,
+[3] 		4 Carcharias,
+[4] 		5 'Carcharhinus_l',
+[5] 		6 'Carcharhinus_a',
+[6] 		7 Cetorhinus,
+[7] 		8 Chiloscyllium,
+[8] 		9 Chlamydoselachus,
+[9] 		10 Fluvitrygon,
+[10] 		11 Galeocerdo,
+[11] 		12 Galeorhinus,
+[12] 		13 Ginglymostoma,
+[13] 		14 Heptranchias,
+[14] 		15 Heterodontus,
+[15] 		16 Hexnachus,
+[16] 		17 Isurus,
+[17] 		18 Mustelus,
+[18] 		19 Negaprion,
+[19] 		20 Notorynchus,
+[20] 		21 Odontaspis,
+[21] 		22 Parmaturus,
 [22] 		23 Pristis,
-[23] 		24 'Pteroplatytrygon_violacea',
-[24] 		25 'Somnsiosus_microcelaphus',
-[25] 		26 Sphyrna,
-[26] 		27 'Stegostoma_trigrinum',
-[27] 		28 Taeniura,
-[28] 		29 'Telatrygon_zugei',
-[29] 		30 Urolophus;
-	TREE 'IQ-TREE Tree+' = (1:0.0000005,((6:0.000001,17:0.0000022876):0.0000024984,(((5:0.0120173425,18:0.0000021075):0.0118458168,((4:0.000001,26:0.0070050937):0.0000204628,(11:0.000001,(20:0.000001,(10:0.0474979675,(3:0.2220146684,21:0.0000027816):0.0000021004):0.0000027344):0.0000026665):0.0000020144):0.0067714928):0.0587535345,(16:0.0897458214,((12:0.0440515134,(7:0.0000024367,(14:0.000001,27:0.000001):0.0400175292):0.0428015582):0.042917507,((25:0.1534004456,(8:0.027032754,(19:0.0053128991,(13:0.0152600096,15:0.0172626137):0.0118899793):0.1268059804):0.0613429192):0.0464802155,((2:0.0000023474,(22:0.0329382651,23:0.082504292):0.0250228616):0.0000023604,((24:0.0721641872,28:0.000001):0.0388086488,(30:0.0656911297,(9:0.0154118114,29:0.000002039):0.0000027893):0.0000027699):0.3077387801):0.2167416719):0.0429179726):0.0136618688):0.041113414):0.0624330086):0.0000005);
-
-END;
-
-
-BEGIN TREES[!'This  "temporary" tree block was written by Mesquite to hold the modified tree being edited in a tree window.'];
-	Title Temp1398.1775284191327.3507820232928284987;
-	ID 019d5733c70d25;
-	LINK Taxa = Taxa2;
-	TRANSLATE
-[0] 		1 'Alopias_vulpinus',
-[1] 		2 'Beringraja_binoculata',
-[2] 		3 'Callorhinchus_milii',
-[3] 		4 'Carcarhias_taurus ',
-[4] 		5 Carcharhinus,
-[5] 		6 'Cetorhinus_maximus',
-[6] 		7 'Chiloscyllium_plagiosum',
-[7] 		8 'Chlamydoselachus_anguineus ',
-[8] 		9 'Fluvitrygon_signifer',
-[9] 		10 'Galeocerdo_cuvier',
-[10] 		11 'Galeorhinus_galeus',
-[11] 		12 'Ginglymostoma_cirratum',
-[12] 		13 'Heptranchias_perlo',
-[13] 		14 'Heterodontus_francisci',
-[14] 		15 Hexanchus,
-[15] 		16 'Isurus_oxyrinchus',
-[16] 		17 Mustelus,
-[17] 		18 'Negaprion_brevirostris',
-[18] 		19 'Notorynchus_cepedianus',
-[19] 		20 'Odontaspididae_noronhai',
-[20] 		21 'Parmaturus_xaniurus ',
-[21] 		22 'Platyrhinoidis_triseriata',
-[22] 		23 Pristis,
-[23] 		24 'Pteroplatytrygon_violacea',
-[24] 		25 'Somnsiosus_microcelaphus',
-[25] 		26 Sphyrna,
-[26] 		27 'Stegostoma_trigrinum',
-[27] 		28 Taeniura,
-[28] 		29 'Telatrygon_zugei',
-[29] 		30 Urolophus;
-	TREE 'IQ-TREE Tree+' = (1:0.0000005,((6:0.000001,17:0.0000022876):0.0000024984,(((5:0.0120173425,18:0.0000021075):0.0118458168,((4:0.000001,26:0.0070050937):0.0000204628,(11:0.000001,(20:0.000001,(10:0.0474979675,(3:0.2220146684,21:0.0000027816):0.0000021004):0.0000027344):0.0000026665):0.0000020144):0.0067714928):0.0587535345,(16:0.0897458214,((12:0.0440515134,(7:0.0000024367,(14:0.000001,27:0.000001):0.0400175292):0.0428015582):0.042917507,((25:0.1534004456,(8:0.027032754,(19:0.0053128991,(13:0.0152600096,15:0.0172626137):0.0118899793):0.1268059804):0.0613429192):0.0464802155,((2:0.0000023474,(22:0.0329382651,23:0.082504292):0.0250228616):0.0000023604,((24:0.0721641872,28:0.000001):0.0388086488,(30:0.0656911297,(9:0.0154118114,29:0.000002039):0.0000027893):0.0000027699):0.3077387801):0.2167416719):0.0429179726):0.0136618688):0.041113414):0.0624330086):0.0000005);
+[23] 		24 Pteroplatytrygon,
+[24] 		25 Somnsiosus,
+[25] 		26 'Sphyrna_z',
+[26] 		27 'Sphyrna_ti',
+[27] 		28 Stegostoma,
+[28] 		29 Taeniura,
+[29] 		30 Telatrygon,
+[30] 		31 Urolophus;
+	TREE 'IQ-TREE Tree+' = (1:0.0000005,((7:0.000001,18:0.0000022876):0.0000024984,(((6:0.0120173425,19:0.0000021075):0.0118458168,((4:0.000001,27:0.0070050937):0.0000204628,(12:0.000001,(21:0.000001,(11:0.0474979675,(3:0.2220146684,22:0.0000027816):0.0000021004):0.0000027344):0.0000026665):0.0000020144):0.0067714928):0.0587535345,(17:0.0897458214,((13:0.0440515134,(8:0.0000024367,(15:0.000001,28:0.000001):0.0400175292):0.0428015582):0.042917507,((25:0.1534004456,(9:0.027032754,(20:0.0053128991,(14:0.0152600096,16:0.0172626137):0.0118899793):0.1268059804):0.0613429192):0.0464802155,((2:0.0000023474,23:0.10752715360000001):0.0000023604,((24:0.0721641872,29:0.000001):0.0388086488,(31:0.0656911297,(10:0.0154118114,30:0.000002039):0.0000027893):0.0000027699):0.3077387801):0.2167416719):0.0429179726):0.0136618688):0.041113414):0.0624330086):0.0000005);
 
 END;
 
@@ -1981,12 +1898,12 @@ Begin MESQUITE;
 		MESQUITESCRIPTVERSION 2;
 		TITLE AUTO;
 		tell ProjectCoordinator;
-		timeSaved 1775284504461;
+		timeSaved 1776358234409;
 		getEmployee #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			setID 0 7866465317898214753;
 			tell It;
-				setDefaultOrder  52 82 1 50 399 49 48 4 115 73 63 13 420 6 5 395 21 70 178 48 56 37 43 110 36 397 46 112 109 123;
+				setDefaultOrder  56 86 1 54 4 402 52 51 5 118 76 66 14 423 7 6 398 22 73 181 51 59 46 113 39 25 399 48 114 111 125;
 				attachments <null>;
 			endTell;
 		endTell;
@@ -1999,7 +1916,7 @@ Begin MESQUITE;
 				inhibitEditing 1;
 			endTell;
 			mqVersion 401;
-			checksumv 0 3 123206221 null  getNumChars 236 numChars 236 getNumTaxa 30 numTaxa 30   short true   bits 95   states 95   sumSquaresStatesOnly 14237.0 sumSquares 14237.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
+			checksumv 0 3 173945212 null  getNumChars 236 numChars 236 getNumTaxa 31 numTaxa 31   short true   bits 95   states 95   sumSquaresStatesOnly 14619.0 sumSquares 14619.0 longCompressibleToShort false usingShortMatrix true   NumFiles 1 NumMatrices 1;
 			mqVersion;
 		endTell;
 		getWindow;
@@ -2010,8 +1927,8 @@ Begin MESQUITE;
 			setAnnotationSize 0;
 			setFontIncAnnot 0;
 			setFontIncExp 0;
-			setSize 1494 807;
-			setLocation -7 -7;
+			setSize 1478 791;
+			setLocation 1 1;
 			setFont SanSerif;
 			setFontSize 10;
 			getToolPalette;
@@ -2042,22 +1959,6 @@ Begin MESQUITE;
 			writeExcludedCharacters true;
 			uniqueSuffix '';
 		endTell;
-		getEmployee  #mesquite.chromaseq.ExportFastaDNAForGenBankTbl2Asn.ExportFastaDNAForGenBankTbl2Asn;
-		tell It;
-			includeGaps false;
-			simplifyTaxonName false;
-			convertMultStateToMissing true;
-			writeExcludedCharacters true;
-			uniqueSuffix '';
-		endTell;
-		getEmployee  #mesquite.chromaseq.ExportFastaDNAForSequin.ExportFastaDNAForSequin;
-		tell It;
-			includeGaps false;
-			simplifyTaxonName false;
-			convertMultStateToMissing true;
-			writeExcludedCharacters true;
-			uniqueSuffix '';
-		endTell;
 		getEmployee  #mesquite.minimal.ManageTaxa.ManageTaxa;
 		tell It;
 			showTaxa #7866465317898214753 #mesquite.lists.TaxonList.TaxonList;
@@ -2073,14 +1974,15 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1400 735;
-					setLocation -7 -7;
+					setSize 1384 719;
+					setLocation 1 1;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
-						setTool mesquite.lists.TaxonList.TaxonListWindow.arrow;
+						setTool mesquite.lists.TaxonList.TaxonListWindow.ibeam;
 					endTell;
+					setActive;
 					reviewColumnWidths;
 				endTell;
 				showWindow;
@@ -2092,122 +1994,6 @@ Begin MESQUITE;
 				getEmployee #mesquite.lists.TaxonListAnnotPanel.TaxonListAnnotPanel;
 				tell It;
 					togglePanel on;
-				endTell;
-			endTell;
-		endTell;
-		getEmployee  #mesquite.trees.BasicTreeWindowCoord.BasicTreeWindowCoord;
-		tell It;
-			makeTreeWindow #7866465317898214753  #mesquite.trees.BasicTreeWindowMaker.BasicTreeWindowMaker;
-			tell It;
-				suppressEPCResponse;
-				setTreeSource  #mesquite.trees.StoredTrees.StoredTrees;
-				tell It;
-					setTreeBlock 2;
-					setTreeBlockID 019d572e232721;
-					toggleUseWeights off;
-				endTell;
-				setAssignedID 1398.1775284191327.3507820232928284987;
-				getTreeWindow;
-				tell It;
-					readUnsavedTreeBlock Temp1398.1775284191327.3507820232928284987;
-					setUniqueID 019d572f006817;
-					setExplanationSize 30;
-					setAnnotationSize 20;
-					setFontIncAnnot 0;
-					setFontIncExp 0;
-					setSize 1400 735;
-					setLocation -7 -7;
-					setFont SanSerif;
-					setFontSize 10;
-					getToolPalette;
-					tell It;
-					endTell;
-					getTreeDrawCoordinator #mesquite.trees.BasicTreeDrawCoordinator.BasicTreeDrawCoordinator;
-				tell It;
-					suppress;
-					setTreeDrawer  #mesquite.trees.SquareLineTree.SquareLineTree;
-					tell It;
-						setNodeLocs #mesquite.trees.NodeLocsStandard.NodeLocsStandard;
-						tell It;
-							orientRight;
-							branchLengthsDisplay 1;
-							toggleScale on;
-							toggleBroadScale off;
-							toggleCenter on;
-							toggleEven on;
-							setFixedTaxonDistance 0;
-							setTaxonSqueeze 1.0;
-						endTell;
-						setEdgeWidth 3;
-						showEdgeLines off;
-					endTell;
-					setBackground White;
-					setBranchColor Black;
-					showNodeNumbers off;
-					showBranchColors on;
-					setSelectedTaxonHighlightMode 1;
-					desuppress;
-					getEmployee #mesquite.trees.BasicDrawTaxonNames.BasicDrawTaxonNames;
-					tell It;
-						setFontSize 12;
-						setColor Black;
-						setTaxonNameStyler  #mesquite.trees.ColorTaxonByPartition.ColorTaxonByPartition;
-						toggleShadePartition off;
-						toggleShowFootnotes on;
-						toggleNodeLabels on;
-						toggleCenterNodeNames off;
-						toggleShowNames on;
-						namesAngle ?;
-					endTell;
-					getEmployee #mesquite.trees.CollapseCladeNameHighlight.CollapseCladeNameHighlight;
-					tell It;
-						setMode 5;
-					endTell;
-				endTell;
-					setTreeNumber 1;
-					pinToLastTree off;
-					setDrawingSizeMode 0;
-					toggleLegendFloat on;
-					scale 0;
-					toggleTextOnTree off;
-					togglePrintName off;
-					showWindow;
-				endTell;
-				desuppressEPCResponse;
-				getEmployee #mesquite.trees.TreeInfoValues.TreeInfoValues;
-				tell It;
-					panelOpen false;
-				endTell;
-				getEmployee #mesquite.genomic.ShowMatrixInTreeWindow.ShowMatrixInTreeWindow;
-				tell It;
-					chooseOrLink 0;
-					fieldWidth 0;
-					selectedOnly false;
-					showControlIcon true;
-					useTraceColors true;
-					showMatrix false;
-				endTell;
-				getEmployee #mesquite.trees.ColorBranches.ColorBranches;
-				tell It;
-					setColorRGB #ff0000;
-					removeColor off;
-				endTell;
-				getEmployee #mesquite.ornamental.BranchNotes.BranchNotes;
-				tell It;
-					setAlwaysOn off;
-				endTell;
-				getEmployee #mesquite.ornamental.NodeSpots.NodeSpots;
-				tell It;
-					showSpots on;
-					spotSize 8;
-					spotSizeSet false;
-					spotType 0;
-					spotColor #000000;
-					offset 0;
-				endTell;
-				getEmployee #mesquite.ornamental.ColorTreeByPartition.ColorTreeByPartition;
-				tell It;
-					colorByPartition on;
 				endTell;
 			endTell;
 		endTell;
@@ -2226,16 +2012,15 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1400 715;
-					setLocation -7 -7;
+					setSize 1384 699;
+					setLocation 1 1;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
 					tell It;
-						setTool mesquite.charMatrices.AddDeleteData.AddDeleteData.addTaxa;
+						setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
 					endTell;
-					setActive;
-					setTool mesquite.charMatrices.AddDeleteData.AddDeleteData.addTaxa;
+					setTool mesquite.charMatrices.BasicDataWindowMaker.BasicDataWindow.arrow;
 					colorCells  #mesquite.charMatrices.ColorByState.ColorByState;
 				tell It;
 					setStateLimit 9;
@@ -2311,8 +2096,8 @@ Begin MESQUITE;
 						setAnnotationSize 20;
 						setFontIncAnnot 0;
 						setFontIncExp 0;
-						setSize 1400 735;
-						setLocation -7 -7;
+						setSize 1384 719;
+						setLocation 1 1;
 						setFont SanSerif;
 						setFontSize 10;
 						getToolPalette;
@@ -2371,8 +2156,8 @@ Begin MESQUITE;
 					setAnnotationSize 20;
 					setFontIncAnnot 0;
 					setFontIncExp 0;
-					setSize 1400 735;
-					setLocation -7 -7;
+					setSize 1384 719;
+					setLocation 1 1;
 					setFont SanSerif;
 					setFontSize 10;
 					getToolPalette;
@@ -2400,7 +2185,7 @@ Begin MESQUITE;
 				setAnnotationSize 0;
 				setFontIncAnnot 0;
 				setFontIncExp 0;
-				setLocation -7 -7;
+				setLocation 1 1;
 				setFont SanSerif;
 				setFontSize 10;
 				getToolPalette;
@@ -2412,7 +2197,7 @@ Begin MESQUITE;
 		getWindow;
 		tell It;
 			setResourcesState false false 94;
-			findWindow 019a2491b5e810;
+			findWindow 019a2491b3c39;
 			tell It;
 				setAsFront;
 			endTell;
