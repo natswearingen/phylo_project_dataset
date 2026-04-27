@@ -1,0 +1,18 @@
+#nexus
+begin sets;
+    charset part1 = 12S_mtg.nexus: *;
+    charset part2 = 16S_mtg.nexus: *;
+    charset part3 = COI_mtg.nexus: *:
+    charset part4 = COII_mtg.nexus: *;
+    charset part5 = COIII_mtg.nexus: *;
+    charset part6 = ND1_mtg.nexus: *;
+    charset part7 = ND2_mtg.nexus: *;
+    charset part8 = ND3_mtg.nexus: *;
+    charset part9 = ND4_mtg.nexus: *;
+    charset part10 = ND4L_mtg.nexus: *:
+    charset part11 = ND5_mtg.nexus: *;
+    charset part12 = ND6_mtg.nexus: *;
+    charset part13= mtg_spp.nexus:MORPH, *; 
+
+    charpartition mine = GTR+G:part1, GTR+G:part2, GTR+G:part3, GTR+G:part4, GTR+G:part5, GTR+G:part6, GTR+G:part7, GTR+G:part8, GTR+G:part9,GTR+G:part10, GTR+G:part11, GTR+G:part12, MK:part13; 
+end;
